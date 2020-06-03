@@ -19,7 +19,7 @@ end
 command.join
 
 command = Thread.new do 
-    system('sgit clone https://gitlab.flux.utah.edu/jczhu/oaisim-xran/')
+    system('git clone https://gitlab.flux.utah.edu/jczhu/oaisim-xran/')
 end
 command.join
 command = Thread.new do 
