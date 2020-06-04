@@ -5,10 +5,6 @@ require 'net/ssh/multi'
 h1 = 'pc06-fortvm-2.emulab.net'
 h2 = 'pc06-fortvm-1.emulab.net'
 u = 'Hmoffat'
-
-process :main do
-  setup_ssh
-end
 dir = "/ems/"
 # This will ssh into each node and will clone my ems repo to it so It can run my scripts
 
