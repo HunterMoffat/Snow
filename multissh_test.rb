@@ -12,6 +12,8 @@ sim = Thread.new do
   Net::SSH.start(h2, u) do |session|
     @result = session.exec!('git clone https://github.com/HunterMoffat/ems.git')
     puts @result
+    sleep(5)
+    puts 'done sleeping!'
     session.exec!('cd ems')
     @result = puts @result
     session.exec!('ruby epc.rb')
@@ -24,6 +26,8 @@ epc = Thread.new do
   Net::SSH.start(h1, u) do |session|
     @result = session.exec!('git clone https://github.com/HunterMoffat/ems.git')
     puts @result
+    sleep(5)
+    puts 'done sleeping!'
     @result = session.exec!('cd ems
       ruby sim_simple.rb')
     puts @result
