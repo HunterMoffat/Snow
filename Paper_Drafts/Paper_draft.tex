@@ -1,0 +1,62 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[margin=.75in]{geometry}
+\graphicspath{ {images/} }
+\title{Snow: An Experiment Management System for CloudLab POWDER}
+\author{Hunter Moffat}
+\date{June 2020}
+%this is a comment in Latex
+\begin{document}
+\maketitle
+\begin{multicols}{2}
+
+\begin{abstract}
+Cloud based experiment testbeds allow users to reserve resources and conduct experiments remotely.  Systems such as Emulab and POWDER require the user to manually set up and run experiments on each machine or 'node' they wish to use.  The set up and execution of experiments across many machines is often tedious and prone to errors from the user.  Currently, there is no system in place to automatically retry experiments that have failed during execution.  This paper introduces Snow, which is an experiment management system (EMS) for POWDER. Snow was created based off of XPFlow, which allows users to automate the setup, execution and retry failed experiments distributed across any number of machines.    
+\end{abstract}
+\section{Introduction}
+\qquad POWDER is a cloudlab [2] based tool that enables users to reserve nodes and run experiments in a 5G LTE testbed. POWDER is a powerful tool, however there are numerous drawbacks which limit its potential and efficiency. Currently, in order to run an experiment, users must login to POWDER and manually start each of their experiments.  The process of starting an experiment can be tedious for users wishing to run multiple experiments, multiple times.  Furthermore, if an error occurs during the execution of an experiment, the user is not clearly notified of the failure and must manually restart their experiment through the POWDER portal.  There is also no system in place for tracking successful and failed experiments.  Additionally, the results of the experiments is not stored for the user to later analyze.  These drawbacks are the main motivation for creating an EMS for Powder.  \newline
+\qquad Snow is a solution to these issues, providing users the power to remotely start, monitor and terminate experiments from the command line.  Users write scripts that specify the number of experiments to start, which profiles to use, the duration of each experiment and can log any information they deem necessary to be analyzed later.  Automation, scalability, reproducibility, and error handling are the core components of Snow. These components are further discussed in detail in the Related Works section below. It also enables users to start, monitor and terminate multiple experiments simultaneously, allowing users to deploy experiments across the testbed using one command.  \newline
+\qquad The overall goal of Snow was to give POWDER and CloudLab users a programmable option for distributing and running experiments.  Snow was created with the sole purpose of increasing productivity of experiments in POWDER and Cloudlab.  It achieved this by removing the need to use the web-based portal to start and monitor experiments.  Giving the user full control of what information to keep track of and store during the execution of experiments.  This gives the user meaningful and specific results which can later be analyzed.  Snow effectively decreases the time needed to start multiple experiments and gives the user substantially more managerial power over the execution of their experiments.\newline
+\qquad Snow is built atop of XPFlow, which is a powerful tool that gives users the ability to program workflows and deploy them across a testbed of nodes.  XPFlow has built in functionality for the Grid 5000 testbed and was modified to work for POWDER.  The POWDER specific components added to XPFlow are as follows: ...... [I don't want to sound redundant here] ...... 
+\section{Background}
+Experiment Management Systems are powerful tools that give a user control over the various experiments they have running inside a testbed.  The design of a good experiment management system can be broken down into 4 core features:
+(1) Automation, (2) Scalability, (3) Reproducibility, and (4) Error Handling. These features combined will provide the user with almost complete control over their experiment environment and provide the necessary information to verify their findings and results. \newline
+\textbf{Automation}: Automation provides the user with tools to setup, run and record experiments running on various machines inside a network.  The setup of machines is almost always different and specific to the experiment(s) being conducted.  Manually setting up each machine is incredibly tedious for the user and often prone to user error (e.g. mistyping or forgetting a command during setup).  Reducing simple user errors from the experimentation process substantially increases the productivity of experimentation.  Automation serves as a strong foundation for an EMS and serves as a building block for the other core features of an EMS.\newline
+\textbf{Scalability}:  This feature goes hand in hand with automation.  Systems such as XpFlow [1] and Chef [4] have been implemented in cloud computing environments to distribute information and processes across all machines in a given experiment.  Scalability enables the EMS to effectively manage experiments of any size.  Whether the experiment is just a couple of machines or hundreds of machines should not be a concern for the user.  Scalability also enables the distribution of the setup and execution features that automation provides giving the user the ability to execute multiple experiments on different machines simultaneously.  Scalability gives EMSs the power to generate large data sets in a timely manor which prior to implementation would have been extremely time consuming for the user.\newline
+\textbf{Reproducibility}: Without Automation and Scalability reproducing results would be very difficult and a proper EMS should make this process a breeze for the user [5].  Reproducible results are vital to researchers because it is the best way to verify their scientific methods and experimental results.  An EMS should provide tools and information for the user to reconstruct the given experiment exactly. As discussed above, each experiment is different and giving the user the power to log whatever information they desire enables users to track the execution of their experiments down to every finite detail. Thus determining what information to record and order of execution should be configuration tools found in an EMS.\newline
+\textbf{Error Handling}:
+Error handling is one of the most important features of any EMS.  Errors are a very common problem that are almost inevitable when deploying large and small scale experiments.  Users should not have to manually restart failed experiments and an EMS should provide users with the ability to automatically retry failed experiments until a critical failure has occurred.  Since each experiment is different, an EMS should give the user the power to define what a critical failure is for their given experiment. A good EMS should have the capability to monitor the execution of experiments and determine if the experiment needs to retry or be restarted.  This feature takes strain off the user and increases the productivity of the testbed. This topic was discussed in detail in [1] which emphasised the importance of giving users the responsibility to decide which parts of their experiment(s) should be retried, reset or if the experiment should be restarted or terminated indefinitely upon failure. 
+\section{Snow}
+\quad Building an EMS from scratch would be ideal, but due to time constraints, modifying already existing EMS for other testbeds and tools built for POWDER were used to create  Snow.  Xpflow[1], an EMS created for grid 5000 and portal-tools created by Leigh Stoller[3] were modified and combined to create Snow.  Xpflow enables users to start experiments, retry failed experiments, and run scripts by using an ruby based language and engine.  Xpflow also grants the ability to store the results of experiments in a log file that can be analyzed by the user.  Portal-tools allows users to start, monitor and terminate cloudlab experiments from the command line.  
+\subsection{XPFlow}
+\quad XPFlow is a work flow inspired approach to experiment management.  XPFlow provides a domain specific language which serves as a language to create and program custom workflows.  The domain specific language defines workflows in two main components: 'processes' and 'activities'.  "Activities can be implemented imperatively (using a low-level programming language), or declaratively as processes that use various patterns to group activities and other processes into more complex workflows. In other words, the processes orchestrate the execution of activities, including other processes, whereas imperative activities implement final actions." [1].   \newline
+\quad In order for Xpflow to work for POWDER, a new module and some modifications to the Xpflow library had to be made. A module in Xpflow is essentially a class of functions that a user can call within their programs.  Therefore, Snow implements a module named powder which is a class that contains methods for EMS functionality. In addition to the powder module, modifications were made to the core library of Xpflow to enable functionality without having to require powder in every script. Xpflow was chosen because of its 'workflow inspired approach'[1], which closely aligns itself with the design goals of an EMS. 
+\subsection{Portal-Tools}
+\quad To integrate Portal-Tools into Xpflow was simple.  Within the powder library, Xpflow makes system calls that execute portal-tools with user specified fields and logs each step of the process. \newline
+\section{Experimentation}
+\section{Results}
+\section{Limitations and Future Work}
+
+\subsection{Limitations} Snow has been shown to be an effective solution for eliminating drawbacks in POWDER.  However, Snow  is not a perfect solution.  As mentioned above, Snow is built on Xpflow which was developed 6 years prior to this paper and EMS implementation. Because of this, Snow inherits the same limitations of Xpflow which were discussed in detail in [1].  It runs on an outdated version of Ruby [version 2.0.0] which means its compatibility with modern Ruby syntax and scripts is somewhat of a gamble.  This means if a user wishes to program a script for their experiments risk free, they must use an outdated version of Ruby which may lack features or functionality they desire.   However, this issue rarely occurred during implementation.   \newline
+
+\subsection{Future Work} Snow, as it stands, serves as a great model for future implementation of a custom EMS specifically made for POWDER.  If time was not a constraint, Snow could benefit from having a simple user interface that gives users a visual medium to monitor their experiments in real time.  
+
+\section{Related Work}
+
+
+
+\section{Discussion}
+\section{Conclusion}
+\textbf{References}: 
+    [1] A workflow-inspired, modular and robust approach to experiments in distributed systems (Buchert et. al.)
+\newline
+    [2] https://www.cloudlab.us/
+    [3] https://gitlab.flux.utah.edu/stoller/portal-tools
+    [4] Introducing Configuration Management Capabilities into CloudLab Experiments (Duplyakin et. al.)\newline
+    [5] Testbeds Support for Reproducible Research (Lucas Nussbaum) \newline
+    [6] DEW: Distributed Experiment Workflows (Mirkovic et. al.)\newline
+
+\end{multicols}
+\end{document}
