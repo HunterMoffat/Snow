@@ -1,8 +1,12 @@
-\documentclass[12pt, letterpaper]{article}
+\documentclass[11pt,twocolumn,letterpaper]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[plain]{fullpage}
+\usepackage{mathptmx}
+\usepackage{microtype}
+\usepackage{siunitx} % for 'S' table column type
 \usepackage{graphicx}
-\usepackage{multicol}
-\usepackage[margin=.75in]{geometry}
+\usepackage{url}
+
 \graphicspath{ {images/} }
 \title{Snow: An Experiment Management System for CloudLab POWDER}
 \author{Hunter Moffat}
@@ -10,7 +14,6 @@
 %this is a comment in Latex
 \begin{document}
 \maketitle
-\begin{multicols}{2}
 
 \begin{abstract}
 Cloud based experiment testbeds allow users to reserve resources and conduct experiments remotely.  Systems such as Emulab and POWDER require the user to manually set up and run experiments on each machine or 'node' they wish to use.  The set up and execution of experiments across many machines is often tedious and prone to errors from the user.  Currently, there is no system in place to automatically retry experiments that have failed during execution.  This paper introduces Snow, which is an experiment management system (EMS) for POWDER. Snow was created based off of XPFlow, which allows users to automate the setup, execution and retry failed experiments distributed across any number of machines.    
@@ -58,5 +61,4 @@ Error handling is one of the most important features of any EMS.  Errors are a v
     [5] Testbeds Support for Reproducible Research (Lucas Nussbaum) \newline
     [6] DEW: Distributed Experiment Workflows (Mirkovic et. al.)\newline
 
-\end{multicols}
 \end{document}
