@@ -1,0 +1,17 @@
+#!/bin/bash -eu
+
+if [ $# -ne 2 ]; then
+    echo "Give src dir and dst dir."
+    exit 1
+fi
+
+src="$1"
+dst="$2"
+
+switch=""
+
+if [ -d "$src" ]; then
+    switch="-r"
+fi
+
+exec scp -F <%= path %>/ssh-config ${switch} ${src} this:${dst}

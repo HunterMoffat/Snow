@@ -1,0 +1,18 @@
+
+# Grid5000 template
+
+LogLevel quiet
+UserKnownHostsFile /dev/null
+StrictHostKeyChecking no
+BatchMode yes
+ConnectTimeout 15
+ForwardAgent yes
+
+Host proxy
+   User <%= g5k_user %>
+   Hostname <%= gw %>
+
+Host this
+   User <%= user %>
+   Hostname <%= host %>
+   ProxyCommand ssh -F <%= path %>/ssh-config proxy 'nc <%= host %> 22'

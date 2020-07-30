@@ -1,0 +1,4 @@
+#!/bin/bash -eu
+# Runs SSH so that it will hold connection for the given amount of seconds.
+
+exec <%= path %>/ssh -f sleep ${1}

@@ -1,0 +1,12 @@
+#!/bin/bash -eux
+
+if [ $# -ne 2 ]; then
+    echo "Give src dir and dst dir."
+    exit 1
+fi
+
+src="$1"
+dst="$2"
+
+cmd="scp -S <%= path %>/ssh $src :$dst"
+exec "$cmd"

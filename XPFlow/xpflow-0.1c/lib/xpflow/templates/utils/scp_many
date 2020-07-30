@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -eux
+
+dest_dir=${1}
+shift
+
+exec scp -F <%= path %>/ssh-config -- "$@" this:${dest_dir}

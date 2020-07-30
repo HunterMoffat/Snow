@@ -1,0 +1,19 @@
+#!/bin/bash -eu
+# 
+# this assumes that taktuk is installed on nodes
+
+if [ $# -eq 0 ]; then
+    echo "No file given."
+    exit 1
+fi
+
+list_local=${1}
+shift
+
+tmpdir=$(<%= path %>/ssh mktemp -d)
+list_remote=${tmpdir}/hostfile
+
+# <%= path %>/batch 3  # pipe connection for 3 seconds
+<%= path %>/scp ${list_local} ${list_remote}
+<%= path %>/ssh taktuk -f ${list_remote} "$@"
+# <%= path %>/ssh rm -rf ${tmpdir}

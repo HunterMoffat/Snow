@@ -1,0 +1,12 @@
+#!/bin/bash -eu
+#
+#  We boostrap here and return YAML
+#
+#  The needed variables are:
+#     - tmpdir - tmpdir created on a remote site
+#
+
+tmpdir=$(<%= path %>/ssh "mktemp -d")
+
+echo "---"
+echo ":tmpdir: ${tmpdir}"

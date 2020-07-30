@@ -1,0 +1,110 @@
+#!/usr/bin/env ruby
+# encoding: UTF-8
+# Runs xpflow script
+
+require('pathname')
+
+def realpath(x)
+    Pathname.new(x).realpath.to_s
+end
+
+# code that magically switches ruby interpreter
+if ENV.key?("__RUBY__")
+    __ruby__ = ENV["__RUBY__"]
+    __here__ = realpath(__FILE__)
+    ENV.delete("__RUBY__")  # avoid infinite loop
+    begin
+        exec(__ruby__, __here__, *ARGV)
+    rescue Errno::ENOENT => e
+        puts "Could not launch with custom Ruby (#{e})."
+    end
+    exit 1
+end
+
+def get_lib_dir
+    f = __FILE__
+    f = File.readlink(f) if File.symlink?(f)
+    p = Pathname.new(File.dirname(f))
+    lib = File.join(p.realpath, '..', 'lib')
+    return Pathname.new(lib).realpath.to_s
+end
+
+$:.unshift(get_lib_dir)
+
+#XSTART
+require 'xpflow'
+#XEND
+
+def usage
+    puts "XPFlow (running on Ruby #{RUBY_VERSION})"
+    puts
+    puts "Usage:"
+    puts "    xpflow <cmd> <workflow> [OPTIONS]"
+    puts
+    puts "Standard commands:"
+    puts "    xpflow run <workflow> - run a workflow"
+    puts
+end
+
+def use(*args)
+    # obsolete, but backwards compatible 'use'
+    return import(*args)
+end
+
+def import_via_name(name)
+    # TODO: it should be more sophisticated
+    name = name.to_s
+    begin
+        Kernel.load("./#{name}")
+    rescue LoadError
+        Kernel.require("xpflow/exts/#{name}_use")
+    end
+end
+
+def import(*args)
+    if args.length == 0
+        raise "Import requires a file or a library"
+    end
+    args.each do |it|
+        import_via_name(it)
+    end
+end
+
+if true
+
+    $original_argv = ARGV.clone
+
+    begin
+        $cmdline_options = XPFlow::Options.new(ARGV.dup)
+        $variables = $cmdline_options.vars
+        $engine.init_from_options($cmdline_options)
+    rescue XPFlow::CmdlineError => e
+        if e.ignore?
+            exit 0
+        else
+            Kernel.puts "Error while parsing cmdline: #{e}"
+            exit 1
+        end
+    end
+
+    $cmdline_options.includes.each do |filename|
+        filename = realpath(filename)
+        require(filename)
+    end
+
+    ok = nil
+    begin
+        XPFlow::TerminalThread.start_thread
+        _, ok = $cmdline_options.dispatch($engine)
+    rescue => e
+        Kernel.puts "Error while running : #{e}."
+        if $cmdline_options.verbose?
+            Kernel.puts "Backtrace:"
+            e.backtrace.each do |line|
+                Kernel.puts("    " + line)
+            end
+        end
+        ok = false
+    end
+    exit(ok ? 0 : 1)
+end

@@ -1,0 +1,13 @@
+
+# Proxy template
+
+LogLevel quiet
+UserKnownHostsFile /dev/null
+StrictHostKeyChecking no
+BatchMode yes
+ConnectTimeout 15
+
+Host this
+   User <%= user %>
+   Hostname <%= host %>
+   ProxyCommand <%= proxy %> 'nc <%= host %> 22'
