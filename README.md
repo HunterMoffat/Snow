@@ -11,5 +11,5 @@ An Experiment Management system for POWDER <br /> <br />
 There are two possible ways to install Snow on your local machine: <br /> 
 Assuming you already have Ruby installed on your local machine <br />
 (A) Install XPFlow by typing `gem install xpflow --pre` into a terminal <br />
-(B) Once installed, download [these](Snow/Installation) files and place them in the correct directories labeled in the repository <br />
+(B) Once installed, download [these](https://github.com/HunterMoffat/Snow/tree/master/Installation) files and place them in the correct directories labeled in the repository <br />
 
