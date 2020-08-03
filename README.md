@@ -1,7 +1,7 @@
 # Snow
 An Experiment Management system for POWDER <br /> <br />
 **INSTALLATION GUIDE** <br /> <br />
-**[1]** Install Portal-tools as described here https://gitlab.flux.utah.edu/stoller/portal-tools <br />
+**[1]** Install Portal-tools as described [HERE](https://gitlab.flux.utah.edu/stoller/portal-tools) <br />
   Once you download your credentials from the cloudlab website, you must convert it to a PEM file that does not require a password
   as described [HERE](https://stackoverflow.com/questions/10069351/enter-pem-pass-phrase-just-once) <br />
   [please note there are some security risks if you do this] <br /> <br />
