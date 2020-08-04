@@ -9,3 +9,4 @@ sudo apt-get -y install autoconf libtool gcc pkg-config \
 yes
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get -y install nodejs
+exit 0
