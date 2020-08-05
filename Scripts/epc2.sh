@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo bash
+echo sudo bash
 
 cd /opt
 git clone https://github.com/nextepc/nextepc
