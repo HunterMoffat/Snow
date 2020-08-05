@@ -9,9 +9,9 @@ system("sudo apt-get remove -y --purge man-db
         libssl-dev libidn11-dev libmongoc-dev libbson-dev libyaml-dev
         sudo apt-get -y install nodejs
         
-        sudo cd /opt
+        cd /opt
         sudo git clone https://github.com/nextepc/nextepc
-        sudo cd nextepc
+        cd nextepc
         sudo autoreconf -iv
         sudo ./configure --prefix=`pwd`/install
         sudo make -j `nproc`
