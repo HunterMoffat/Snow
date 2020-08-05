@@ -1,4 +1,3 @@
-
 system("sudo systemctl restart systemd-networkd
         sudo ip addr add 192.168.0.1/24 dev pgwtun
         sudo ip link set up dev pgwtun
