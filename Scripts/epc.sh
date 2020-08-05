@@ -10,13 +10,13 @@ yes
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get -y install nodejs
 
-cd /opt
-git clone https://github.com/nextepc/nextepc
-cd nextepc
-autoreconf -iv
-./configure --prefix=`pwd`/install
-make -j `nproc`
-make install
+# cd /opt
+# git clone https://github.com/nextepc/nextepc
+# cd nextepc
+# autoreconf -iv
+# ./configure --prefix=`pwd`/install
+# make -j `nproc`
+# make install
 
 # cd /opt/nextepc/webui
 # sudo npm install
