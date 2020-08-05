@@ -9,6 +9,7 @@ system("sudo apt-get remove -y --purge man-db
         libssl-dev libidn11-dev libmongoc-dev libbson-dev libyaml-dev
         sudo apt-get -y install nodejs
         
+        sudo bash
         sudo cd /opt
         sudo git clone https://github.com/nextepc/nextepc
         sudo cd nextepc
@@ -16,6 +17,8 @@ system("sudo apt-get remove -y --purge man-db
         ./configure --prefix=`pwd`/install
         sudo make -j `nproc`
         sudo make install
+        exit
+        
         sudo bash
         cat << EOF > /etc/systemd/network/98-nextepc.netdev
         [NetDev]
