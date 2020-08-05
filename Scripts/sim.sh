@@ -8,3 +8,5 @@ git checkout develop
 cd cmake_targets
 sudo ./build_oai -I -c -C --eNB --UE -w SIMU -y
 yes
+exit
+echo HELLO
