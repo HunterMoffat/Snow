@@ -16,6 +16,7 @@ system("echo yes | sudo apt-get -y install autoconf libtool gcc pkg-config \
         git flex bison libsctp-dev libgnutls28-dev libgcrypt-dev \
         libssl-dev libidn11-dev libmongoc-dev libbson-dev libyaml-dev")
 puts "\n[DONE WITH THE FIRST]\n"
+system("curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -")
 system("sudo apt-get -y install nodejs")
 system("cd /opt && sudo git clone https://github.com/nextepc/nextepc")
 system("cd /opt/nextepc && sudo autoreconf -iv && sudo ./configure --prefix=`pwd`/install && sudo make -j `nproc` && sudo make install")
