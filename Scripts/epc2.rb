@@ -1,6 +1,7 @@
 require 'fileutils'
-file = File.open("/opt/nextepc/install/98-nextepc.netdev")
+file = File.open("98-nextepc.netdev", 'w+')
 File.write(file, "[NetDev]
                 Name=pgwtun
                 Kind=tun
-                EOF")
+                ")
+system("sudo cp 98-nextepc.netdev /opt/systemd/network/")

@@ -7,6 +7,11 @@ require 'fileutils'
 #         Name=pgwtun
 #         Kind=tun
 #         EOF
+puts "\n[ABOUT TO WRITE THE FILE]\n"
+# system("cd Snow/Scripts/ sudo ruby epc2.rb")
+file = File.open("/etc/systemd/network/98-nextepc.netdev", 'w+')
+File.write(file, "[NetDev]\nName=pgwtun\nKind=tun")
+puts "\n[DONE WRITING FILE #{file}]\n"
 system("sudo apt-get remove -y --purge man-db")
 system("sudo apt-get update")
 system("sudo apt-get -y install mongodb")
@@ -20,11 +25,8 @@ system("cd /opt && sudo git clone https://github.com/nextepc/nextepc")
 system("cd /opt/nextepc && sudo autoreconf -iv && sudo ./configure --prefix=`pwd`/install && sudo make -j `nproc` && sudo make install")
 puts "\n[ABOUT TO WRITE THE FILE]\n"
 # system("cd Snow/Scripts/ sudo ruby epc2.rb")
-file = File.open("/opt/nextepc/install/98-nextepc.netdev")
-File.write(file, "[NetDev]
-                Name=pgwtun
-                Kind=tun
-                EOF")
+file = File.open("/etc/systemd/network/98-nextepc.netdev")
+File.write(file, "[NetDev]\nName=pgwtun\nKind=tun")
 puts "\n[DONE WRITING FILE #{file}]\n"
 system("sudo systemctl restart systemd-networkd")
 system("sudo ip addr add 192.168.0.1/24 dev pgwtun")
