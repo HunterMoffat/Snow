@@ -4,4 +4,4 @@ File.write(file, "[NetDev]
                 Name=pgwtun
                 Kind=tun
                 ")
-system("sudo cp 98-nextepc.netdev /opt/systemd/network/")
+system("cd Snow/Scripts && sudo cp 98-nextepc.netdev ~/opt/systemd/network/")
