@@ -18,7 +18,7 @@ log("clone successful")
 # making the scripts executable
 # Executing the scripts on each node
 t1 = Thread.new{powder_execute_one(gnu ,'sim-ran',username,'cd Snow/Scripts && sudo ruby sim.rb')}
-t2 = Thread.new{powder_execute_one(gnu ,'epc',username,"cd Snow/Scripts && sudo ruby epc1.rb")}
+t2 = Thread.new{powder_execute_one(gnu ,'epc',username,"cd Snow/Scripts && sudo ruby epc.rb")}
 t1.join
 t2.join
 log("Done Start Manual portion of Experiment")
