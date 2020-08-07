@@ -1,0 +1,2577 @@
+[ 2020-08-06 14:12:17.326 ] Execution started.
+[ 2020-08-06 11:00:40.958 ] Cmdline: ["radio_test2.rb"]
+[ 2020-08-06 11:00:40.961 ] Git tag: (not git repo)
+[ 2020-08-06 11:00:40.961 ] Temporary path is /tmp/d20200806-16928-amrvgh
+[ 2020-08-06 11:00:40.961 ] Variable list follows:
+[ 2020-08-06 11:00:40.962 ] End of variable list.
+[ 2020-08-06 11:00:40.962 ] Process main: STARTING WORKFLOW
+[ 2020-08-06 11:00:42.856 ] 
+[ 2020-08-06 11:00:42.857 ] Process main: clone successful
+[ 2020-08-06 11:00:42.857 ] Process main: Now running long script
+                                                                                                                                           Key "\e" pressed.
+                                                                                                                                            Key "[" pressed.
+                                                                                                                                            Key "C" pressed.
+[ 2020-08-06 11:05:09.436 ] Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  intltool-debian libarchive-cpio-perl libarchive-zip-perl
+  libfile-stripnondeterminism-perl libmail-sendmail-perl
+  libsys-hostname-long-perl libtimedate-perl po-debconf ssl-cert
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  debhelper* dh-autoreconf* dh-strip-nondeterminism* man-db* ubuntu-standard*
+0 upgraded, 0 newly installed, 5 to remove and 0 not upgraded.
+After this operation, 4,216 kB disk space will be freed.
+(Reading database ... 115931 files and directories currently installed.)
+Removing ubuntu-standard (1.417) ...
+Removing debhelper (11.1.6ubuntu2) ...
+Removing dh-autoreconf (17) ...
+Removing man-db (2.8.3-2) ...
+Removing dh-strip-nondeterminism (0.040-1.1~build1) ...
+Processing triggers for mime-support (3.60ubuntu1) ...
+(Reading database ... 115230 files and directories currently installed.)
+Purging configuration files for man-db (2.8.3-2) ...
+  Removing catpages as well as /var/cache/man hierarchy.
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+Get:1 http://us.archive.ubuntu.com/ubuntu bionic InRelease [242 kB]
+Get:2 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Get:5 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [808 kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu bionic/main i386 Packages [1,007 kB]
+Get:7 http://security.ubuntu.com/ubuntu bionic-security/main i386 Packages [516 kB]
+Get:8 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [254 kB]
+Get:9 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [75.6 kB]
+Get:10 http://security.ubuntu.com/ubuntu bionic-security/restricted i386 Packages [6,412 B]
+Get:11 http://security.ubuntu.com/ubuntu bionic-security/restricted Translation-en [16.5 kB]
+Get:12 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [689 kB]
+Get:13 http://security.ubuntu.com/ubuntu bionic-security/universe i386 Packages [632 kB]
+Get:14 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 Packages [1,019 kB]
+Get:15 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [228 kB]
+Get:16 http://security.ubuntu.com/ubuntu bionic-security/multiverse i386 Packages [3,880 B]
+Get:17 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [8,112 B]
+Get:18 http://security.ubuntu.com/ubuntu bionic-security/multiverse Translation-en [2,852 B]
+Get:19 http://us.archive.ubuntu.com/ubuntu bionic/main Translation-en [516 kB]
+Get:20 http://us.archive.ubuntu.com/ubuntu bionic/restricted i386 Packages [9,156 B]
+Get:21 http://us.archive.ubuntu.com/ubuntu bionic/restricted amd64 Packages [9,184 B]
+Get:22 http://us.archive.ubuntu.com/ubuntu bionic/restricted Translation-en [3,584 B]
+Get:23 http://us.archive.ubuntu.com/ubuntu bionic/universe amd64 Packages [8,570 kB]
+Get:24 http://us.archive.ubuntu.com/ubuntu bionic/universe i386 Packages [8,531 kB]
+Get:25 http://us.archive.ubuntu.com/ubuntu bionic/universe Translation-en [4,941 kB]
+Get:26 http://us.archive.ubuntu.com/ubuntu bionic/multiverse i386 Packages [144 kB]
+Get:27 http://us.archive.ubuntu.com/ubuntu bionic/multiverse amd64 Packages [151 kB]
+Get:28 http://us.archive.ubuntu.com/ubuntu bionic/multiverse Translation-en [108 kB]
+Get:29 http://us.archive.ubuntu.com/ubuntu bionic-updates/main i386 Packages [723 kB]
+Get:30 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [1,032 kB]
+Get:31 http://us.archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [346 kB]
+Get:32 http://us.archive.ubuntu.com/ubuntu bionic-updates/restricted i386 Packages [11.0 kB]
+Get:33 http://us.archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [84.7 kB]
+Get:34 http://us.archive.ubuntu.com/ubuntu bionic-updates/restricted Translation-en [18.7 kB]
+Get:35 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe i386 Packages [1,027 kB]
+Get:36 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1,097 kB]
+Get:37 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [342 kB]
+Get:38 http://us.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [19.2 kB]
+Get:39 http://us.archive.ubuntu.com/ubuntu bionic-updates/multiverse i386 Packages [8,516 B]
+Get:40 http://us.archive.ubuntu.com/ubuntu bionic-updates/multiverse Translation-en [6,712 B]
+Get:41 http://us.archive.ubuntu.com/ubuntu bionic-backports/main i386 Packages [7,508 B]
+Get:42 http://us.archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages [7,516 B]
+Get:43 http://us.archive.ubuntu.com/ubuntu bionic-backports/main Translation-en [4,764 B]
+Get:44 http://us.archive.ubuntu.com/ubuntu bionic-backports/universe i386 Packages [7,724 B]
+Get:45 http://us.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [7,736 B]
+Get:46 http://us.archive.ubuntu.com/ubuntu bionic-backports/universe Translation-en [4,588 B]
+Fetched 33.5 MB in 8s (3,992 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  intltool-debian libarchive-cpio-perl libarchive-zip-perl
+  libfile-stripnondeterminism-perl libmail-sendmail-perl
+  libsys-hostname-long-perl libtimedate-perl po-debconf ssl-cert
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libboost-filesystem1.65.1 libboost-iostreams1.65.1
+  libboost-program-options1.65.1 libboost-system1.65.1 libgoogle-perftools4
+  libpcrecpp0v5 libsnappy1v5 libstemmer0d libtcmalloc-minimal4
+  libyaml-cpp0.5v5 mongo-tools mongodb-clients mongodb-server
+  mongodb-server-core
+The following NEW packages will be installed:
+  libboost-filesystem1.65.1 libboost-iostreams1.65.1
+  libboost-program-options1.65.1 libboost-system1.65.1 libgoogle-perftools4
+  libpcrecpp0v5 libsnappy1v5 libstemmer0d libtcmalloc-minimal4
+  libyaml-cpp0.5v5 mongo-tools mongodb mongodb-clients mongodb-server
+  mongodb-server-core
+0 upgraded, 15 newly installed, 0 to remove and 194 not upgraded.
+Need to get 53.5 MB of archives.
+After this operation, 217 MB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libboost-system1.65.1 amd64 1.65.1+dfsg-0ubuntu5 [10.5 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libboost-filesystem1.65.1 amd64 1.65.1+dfsg-0ubuntu5 [40.3 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libboost-iostreams1.65.1 amd64 1.65.1+dfsg-0ubuntu5 [29.2 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libboost-program-options1.65.1 amd64 1.65.1+dfsg-0ubuntu5 [137 kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libtcmalloc-minimal4 amd64 2.5-2.2ubuntu3 [91.6 kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libgoogle-perftools4 amd64 2.5-2.2ubuntu3 [190 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libpcrecpp0v5 amd64 2:8.39-9 [15.3 kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libstemmer0d amd64 0+svn585-1build1 [62.5 kB]
+Get:9 http://us.archive.ubuntu.com/ubuntu bionic/universe amd64 libyaml-cpp0.5v5 amd64 0.5.2-4ubuntu1 [150 kB]
+Get:10 http://us.archive.ubuntu.com/ubuntu bionic/universe amd64 mongo-tools amd64 3.6.3-0ubuntu1 [12.3 MB]
+Get:11 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libsnappy1v5 amd64 1.1.7-1 [16.0 kB]
+Get:12 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 mongodb-clients amd64 1:3.6.3-0ubuntu1.1 [20.2 MB]
+Get:13 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 mongodb-server-core amd64 1:3.6.3-0ubuntu1.1 [20.3 MB]
+Get:14 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 mongodb-server all 1:3.6.3-0ubuntu1.1 [12.6 kB]
+Get:15 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 mongodb amd64 1:3.6.3-0ubuntu1.1 [9,968 B]
+Fetched 53.5 MB in 11s (4,878 kB/s)
+Selecting previously unselected package libboost-system1.65.1:amd64.
+(Reading database ... 115224 files and directories currently installed.)
+Preparing to unpack .../00-libboost-system1.65.1_1.65.1+dfsg-0ubuntu5_amd64.deb ...
+Unpacking libboost-system1.65.1:amd64 (1.65.1+dfsg-0ubuntu5) ...
+Selecting previously unselected package libboost-filesystem1.65.1:amd64.
+Preparing to unpack .../01-libboost-filesystem1.65.1_1.65.1+dfsg-0ubuntu5_amd64.deb ...
+Unpacking libboost-filesystem1.65.1:amd64 (1.65.1+dfsg-0ubuntu5) ...
+Selecting previously unselected package libboost-iostreams1.65.1:amd64.
+Preparing to unpack .../02-libboost-iostreams1.65.1_1.65.1+dfsg-0ubuntu5_amd64.deb ...
+Unpacking libboost-iostreams1.65.1:amd64 (1.65.1+dfsg-0ubuntu5) ...
+Selecting previously unselected package libboost-program-options1.65.1:amd64.
+Preparing to unpack .../03-libboost-program-options1.65.1_1.65.1+dfsg-0ubuntu5_amd64.deb ...
+Unpacking libboost-program-options1.65.1:amd64 (1.65.1+dfsg-0ubuntu5) ...
+Selecting previously unselected package libtcmalloc-minimal4.
+Preparing to unpack .../04-libtcmalloc-minimal4_2.5-2.2ubuntu3_amd64.deb ...
+Unpacking libtcmalloc-minimal4 (2.5-2.2ubuntu3) ...
+Selecting previously unselected package libgoogle-perftools4.
+Preparing to unpack .../05-libgoogle-perftools4_2.5-2.2ubuntu3_amd64.deb ...
+Unpacking libgoogle-perftools4 (2.5-2.2ubuntu3) ...
+Selecting previously unselected package libpcrecpp0v5:amd64.
+Preparing to unpack .../06-libpcrecpp0v5_2%3a8.39-9_amd64.deb ...
+Unpacking libpcrecpp0v5:amd64 (2:8.39-9) ...
+Selecting previously unselected package libstemmer0d:amd64.
+Preparing to unpack .../07-libstemmer0d_0+svn585-1build1_amd64.deb ...
+Unpacking libstemmer0d:amd64 (0+svn585-1build1) ...
+Selecting previously unselected package libyaml-cpp0.5v5:amd64.
+Preparing to unpack .../08-libyaml-cpp0.5v5_0.5.2-4ubuntu1_amd64.deb ...
+Unpacking libyaml-cpp0.5v5:amd64 (0.5.2-4ubuntu1) ...
+Selecting previously unselected package mongo-tools.
+Preparing to unpack .../09-mongo-tools_3.6.3-0ubuntu1_amd64.deb ...
+Unpacking mongo-tools (3.6.3-0ubuntu1) ...
+Selecting previously unselected package libsnappy1v5:amd64.
+Preparing to unpack .../10-libsnappy1v5_1.1.7-1_amd64.deb ...
+Unpacking libsnappy1v5:amd64 (1.1.7-1) ...
+Selecting previously unselected package mongodb-clients.
+Preparing to unpack .../11-mongodb-clients_1%3a3.6.3-0ubuntu1.1_amd64.deb ...
+Unpacking mongodb-clients (1:3.6.3-0ubuntu1.1) ...
+Selecting previously unselected package mongodb-server-core.
+Preparing to unpack .../12-mongodb-server-core_1%3a3.6.3-0ubuntu1.1_amd64.deb ...
+Unpacking mongodb-server-core (1:3.6.3-0ubuntu1.1) ...
+Selecting previously unselected package mongodb-server.
+Preparing to unpack .../13-mongodb-server_1%3a3.6.3-0ubuntu1.1_all.deb ...
+Unpacking mongodb-server (1:3.6.3-0ubuntu1.1) ...
+Selecting previously unselected package mongodb.
+Preparing to unpack .../14-mongodb_1%3a3.6.3-0ubuntu1.1_amd64.deb ...
+Unpacking mongodb (1:3.6.3-0ubuntu1.1) ...
+Setting up libboost-iostreams1.65.1:amd64 (1.65.1+dfsg-0ubuntu5) ...
+Processing triggers for ureadahead (0.100.0-20) ...
+ureadahead will be reprofiled on next reboot
+Setting up libstemmer0d:amd64 (0+svn585-1build1) ...
+Setting up libboost-system1.65.1:amd64 (1.65.1+dfsg-0ubuntu5) ...
+Setting up libtcmalloc-minimal4 (2.5-2.2ubuntu3) ...
+Setting up libgoogle-perftools4 (2.5-2.2ubuntu3) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Setting up libsnappy1v5:amd64 (1.1.7-1) ...
+Processing triggers for systemd (237-3ubuntu10.38) ...
+Setting up libpcrecpp0v5:amd64 (2:8.39-9) ...
+Setting up libyaml-cpp0.5v5:amd64 (0.5.2-4ubuntu1) ...
+Setting up libboost-program-options1.65.1:amd64 (1.65.1+dfsg-0ubuntu5) ...
+Setting up mongo-tools (3.6.3-0ubuntu1) ...
+Setting up libboost-filesystem1.65.1:amd64 (1.65.1+dfsg-0ubuntu5) ...
+Setting up mongodb-server-core (1:3.6.3-0ubuntu1.1) ...
+Setting up mongodb-clients (1:3.6.3-0ubuntu1.1) ...
+Setting up mongodb-server (1:3.6.3-0ubuntu1.1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/mongodb.service → /lib/systemd/system/mongodb.service.
+Setting up mongodb (1:3.6.3-0ubuntu1.1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Processing triggers for systemd (237-3ubuntu10.38) ...
+Processing triggers for ureadahead (0.100.0-20) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+autoconf is already the newest version (2.69-11).
+bison is already the newest version (2:3.0.4.dfsg-1build1).
+flex is already the newest version (2.6.4-6).
+libtool is already the newest version (2.4.6-2).
+libtool set to manually installed.
+pkg-config is already the newest version (0.29.1-0ubuntu2).
+gcc is already the newest version (4:7.4.0-1ubuntu2.3).
+git is already the newest version (1:2.17.1-1ubuntu0.7).
+libssl-dev is already the newest version (1.1.1-1ubuntu2.1~18.04.6).
+The following packages were automatically installed and are no longer required:
+  intltool-debian libarchive-cpio-perl libarchive-zip-perl
+  libfile-stripnondeterminism-perl libmail-sendmail-perl
+  libsys-hostname-long-perl libtimedate-perl po-debconf ssl-cert
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libbson-1.0-0 libgmp-dev libgmpxx4ldbl libgnutls-dane0 libgnutls-openssl27
+  libgnutls30 libgnutlsxx28 libgpg-error-dev libidn11 libidn2-0-dev
+  libidn2-dev libmongoc-1.0-0 libp11-kit-dev libsctp1 libsnappy-dev
+  libtasn1-6-dev libtasn1-doc libunbound2 nettle-dev
+Suggested packages:
+  libgcrypt20-doc gmp-doc libgmp10-doc libmpfr-dev dns-root-data gnutls-doc
+  gnutls-bin lksctp-tools libyaml-doc
+The following NEW packages will be installed:
+  libbson-1.0-0 libbson-dev libgcrypt20-dev libgmp-dev libgmpxx4ldbl
+  libgnutls-dane0 libgnutls-openssl27 libgnutls28-dev libgnutlsxx28
+  libgpg-error-dev libidn11-dev libidn2-0-dev libidn2-dev libmongoc-1.0-0
+  libmongoc-dev libp11-kit-dev libsctp-dev libsctp1 libsnappy-dev
+  libtasn1-6-dev libtasn1-doc libunbound2 libyaml-dev nettle-dev
+The following packages will be upgraded:
+  libgnutls30 libidn11
+2 upgraded, 24 newly installed, 0 to remove and 192 not upgraded.
+Need to get 4,988 kB of archives.
+After this operation, 15.2 MB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgnutls30 amd64 3.5.18-1ubuntu1.4 [645 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libidn11 amd64 1.33-2.1ubuntu1.2 [46.6 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu bionic/universe amd64 libbson-1.0-0 amd64 1.9.2-1 [68.6 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu bionic/universe amd64 libbson-dev amd64 1.9.2-1 [26.4 kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libgpg-error-dev amd64 1.27-6 [94.8 kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgcrypt20-dev amd64 1.8.1-4ubuntu1.2 [468 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libgmpxx4ldbl amd64 2:6.1.2+dfsg-2 [8,964 B]
+Get:8 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libgmp-dev amd64 2:6.1.2+dfsg-2 [316 kB]
+Get:9 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgnutls-openssl27 amd64 3.5.18-1ubuntu1.4 [21.1 kB]
+Get:10 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgnutlsxx28 amd64 3.5.18-1ubuntu1.4 [13.7 kB]
+Get:11 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libunbound2 amd64 1.6.7-1ubuntu2.3 [267 kB]
+Get:12 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgnutls-dane0 amd64 3.5.18-1ubuntu1.4 [21.0 kB]
+Get:13 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 nettle-dev amd64 3.4-1 [951 kB]
+Get:14 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libtasn1-6-dev amd64 4.13-2 [86.8 kB]
+Get:15 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libp11-kit-dev amd64 0.23.9-2 [60.9 kB]
+Get:16 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libidn2-dev amd64 2.0.4-1.1ubuntu0.2 [61.8 kB]
+Get:17 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libidn2-0-dev amd64 2.0.4-1.1ubuntu0.2 [2,848 B]
+Get:18 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgnutls28-dev amd64 3.5.18-1ubuntu1.4 [660 kB]
+Get:19 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libidn11-dev amd64 1.33-2.1ubuntu1.2 [520 kB]
+Get:20 http://us.archive.ubuntu.com/ubuntu bionic/universe amd64 libmongoc-1.0-0 amd64 1.9.2+dfsg-1build1 [165 kB]
+Get:21 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libsnappy-dev amd64 1.1.7-1 [27.2 kB]
+Get:22 http://us.archive.ubuntu.com/ubuntu bionic/universe amd64 libmongoc-dev amd64 1.9.2+dfsg-1build1 [29.1 kB]
+Get:23 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libsctp1 amd64 1.0.17+dfsg-2 [8,008 B]
+Get:24 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libsctp-dev amd64 1.0.17+dfsg-2 [61.9 kB]
+Get:25 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libtasn1-doc all 4.13-2 [300 kB]
+Get:26 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 libyaml-dev amd64 0.1.7-2ubuntu3 [55.7 kB]
+Fetched 4,988 kB in 1s (3,759 kB/s)
+(Reading database ... 115344 files and directories currently installed.)
+Preparing to unpack .../libgnutls30_3.5.18-1ubuntu1.4_amd64.deb ...
+Unpacking libgnutls30:amd64 (3.5.18-1ubuntu1.4) over (3.5.18-1ubuntu1.3) ...
+Setting up libgnutls30:amd64 (3.5.18-1ubuntu1.4) ...
+(Reading database ... 115344 files and directories currently installed.)
+Preparing to unpack .../00-libidn11_1.33-2.1ubuntu1.2_amd64.deb ...
+Unpacking libidn11:amd64 (1.33-2.1ubuntu1.2) over (1.33-2.1ubuntu1) ...
+Selecting previously unselected package libbson-1.0-0.
+Preparing to unpack .../01-libbson-1.0-0_1.9.2-1_amd64.deb ...
+Unpacking libbson-1.0-0 (1.9.2-1) ...
+Selecting previously unselected package libbson-dev.
+Preparing to unpack .../02-libbson-dev_1.9.2-1_amd64.deb ...
+Unpacking libbson-dev (1.9.2-1) ...
+Selecting previously unselected package libgpg-error-dev.
+Preparing to unpack .../03-libgpg-error-dev_1.27-6_amd64.deb ...
+Unpacking libgpg-error-dev (1.27-6) ...
+Selecting previously unselected package libgcrypt20-dev.
+Preparing to unpack .../04-libgcrypt20-dev_1.8.1-4ubuntu1.2_amd64.deb ...
+Unpacking libgcrypt20-dev (1.8.1-4ubuntu1.2) ...
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+Preparing to unpack .../05-libgmpxx4ldbl_2%3a6.1.2+dfsg-2_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-2) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../06-libgmp-dev_2%3a6.1.2+dfsg-2_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.1.2+dfsg-2) ...
+Selecting previously unselected package libgnutls-openssl27:amd64.
+Preparing to unpack .../07-libgnutls-openssl27_3.5.18-1ubuntu1.4_amd64.deb ...
+Unpacking libgnutls-openssl27:amd64 (3.5.18-1ubuntu1.4) ...
+Selecting previously unselected package libgnutlsxx28:amd64.
+Preparing to unpack .../08-libgnutlsxx28_3.5.18-1ubuntu1.4_amd64.deb ...
+Unpacking libgnutlsxx28:amd64 (3.5.18-1ubuntu1.4) ...
+Selecting previously unselected package libunbound2:amd64.
+Preparing to unpack .../09-libunbound2_1.6.7-1ubuntu2.3_amd64.deb ...
+Unpacking libunbound2:amd64 (1.6.7-1ubuntu2.3) ...
+Selecting previously unselected package libgnutls-dane0:amd64.
+Preparing to unpack .../10-libgnutls-dane0_3.5.18-1ubuntu1.4_amd64.deb ...
+Unpacking libgnutls-dane0:amd64 (3.5.18-1ubuntu1.4) ...
+Selecting previously unselected package nettle-dev:amd64.
+Preparing to unpack .../11-nettle-dev_3.4-1_amd64.deb ...
+Unpacking nettle-dev:amd64 (3.4-1) ...
+Selecting previously unselected package libtasn1-6-dev:amd64.
+Preparing to unpack .../12-libtasn1-6-dev_4.13-2_amd64.deb ...
+Unpacking libtasn1-6-dev:amd64 (4.13-2) ...
+Selecting previously unselected package libp11-kit-dev:amd64.
+Preparing to unpack .../13-libp11-kit-dev_0.23.9-2_amd64.deb ...
+Unpacking libp11-kit-dev:amd64 (0.23.9-2) ...
+Selecting previously unselected package libidn2-dev:amd64.
+Preparing to unpack .../14-libidn2-dev_2.0.4-1.1ubuntu0.2_amd64.deb ...
+Unpacking libidn2-dev:amd64 (2.0.4-1.1ubuntu0.2) ...
+Selecting previously unselected package libidn2-0-dev.
+Preparing to unpack .../15-libidn2-0-dev_2.0.4-1.1ubuntu0.2_amd64.deb ...
+Unpacking libidn2-0-dev (2.0.4-1.1ubuntu0.2) ...
+Selecting previously unselected package libgnutls28-dev:amd64.
+Preparing to unpack .../16-libgnutls28-dev_3.5.18-1ubuntu1.4_amd64.deb ...
+Unpacking libgnutls28-dev:amd64 (3.5.18-1ubuntu1.4) ...
+Selecting previously unselected package libidn11-dev.
+Preparing to unpack .../17-libidn11-dev_1.33-2.1ubuntu1.2_amd64.deb ...
+Unpacking libidn11-dev (1.33-2.1ubuntu1.2) ...
+Selecting previously unselected package libmongoc-1.0-0.
+Preparing to unpack .../18-libmongoc-1.0-0_1.9.2+dfsg-1build1_amd64.deb ...
+Unpacking libmongoc-1.0-0 (1.9.2+dfsg-1build1) ...
+Selecting previously unselected package libsnappy-dev:amd64.
+Preparing to unpack .../19-libsnappy-dev_1.1.7-1_amd64.deb ...
+Unpacking libsnappy-dev:amd64 (1.1.7-1) ...
+Selecting previously unselected package libmongoc-dev.
+Preparing to unpack .../20-libmongoc-dev_1.9.2+dfsg-1build1_amd64.deb ...
+Unpacking libmongoc-dev (1.9.2+dfsg-1build1) ...
+Selecting previously unselected package libsctp1:amd64.
+Preparing to unpack .../21-libsctp1_1.0.17+dfsg-2_amd64.deb ...
+Unpacking libsctp1:amd64 (1.0.17+dfsg-2) ...
+Selecting previously unselected package libsctp-dev:amd64.
+Preparing to unpack .../22-libsctp-dev_1.0.17+dfsg-2_amd64.deb ...
+Unpacking libsctp-dev:amd64 (1.0.17+dfsg-2) ...
+Selecting previously unselected package libtasn1-doc.
+Preparing to unpack .../23-libtasn1-doc_4.13-2_all.deb ...
+Unpacking libtasn1-doc (4.13-2) ...
+Selecting previously unselected package libyaml-dev:amd64.
+Preparing to unpack .../24-libyaml-dev_0.1.7-2ubuntu3_amd64.deb ...
+Unpacking libyaml-dev:amd64 (0.1.7-2ubuntu3) ...
+Setting up libunbound2:amd64 (1.6.7-1ubuntu2.3) ...
+Setting up libsctp1:amd64 (1.0.17+dfsg-2) ...
+Processing triggers for install-info (6.5.0.dfsg.1-2) ...
+Setting up libgpg-error-dev (1.27-6) ...
+Setting up libbson-1.0-0 (1.9.2-1) ...
+Setting up libp11-kit-dev:amd64 (0.23.9-2) ...
+Setting up libtasn1-6-dev:amd64 (4.13-2) ...
+Setting up libyaml-dev:amd64 (0.1.7-2ubuntu3) ...
+Setting up libbson-dev (1.9.2-1) ...
+Setting up libtasn1-doc (4.13-2) ...
+Setting up libgnutlsxx28:amd64 (3.5.18-1ubuntu1.4) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Setting up libsnappy-dev:amd64 (1.1.7-1) ...
+Setting up libgcrypt20-dev (1.8.1-4ubuntu1.2) ...
+Setting up libgnutls-dane0:amd64 (3.5.18-1ubuntu1.4) ...
+Setting up libgnutls-openssl27:amd64 (3.5.18-1ubuntu1.4) ...
+Setting up libmongoc-1.0-0 (1.9.2+dfsg-1build1) ...
+Setting up libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-2) ...
+Setting up libidn2-dev:amd64 (2.0.4-1.1ubuntu0.2) ...
+Setting up libidn2-0-dev (2.0.4-1.1ubuntu0.2) ...
+Setting up libidn11:amd64 (1.33-2.1ubuntu1.2) ...
+Setting up libidn11-dev (1.33-2.1ubuntu1.2) ...
+Setting up libgmp-dev:amd64 (2:6.1.2+dfsg-2) ...
+Setting up libsctp-dev:amd64 (1.0.17+dfsg-2) ...
+Setting up libmongoc-dev (1.9.2+dfsg-1build1) ...
+Setting up nettle-dev:amd64 (3.4-1) ...
+Setting up libgnutls28-dev:amd64 (3.5.18-1ubuntu1.4) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+
+[DONE WITH THE FIRST]
+
+## Installing the NodeSource Node.js 10.x repo...
+
+
+## Populating apt-get cache...
+
++ apt-get update
+Hit:1 http://us.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:3 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Reading package lists...
+
+## Confirming "bionic" is supported...
+
++ curl -sLf -o /dev/null 'https://deb.nodesource.com/node_10.x/dists/bionic/Release'
+
+## Adding the NodeSource signing key to your keyring...
+
++ curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
+OK
+
+## Creating apt sources list file for the NodeSource Node.js 10.x repo...
+
++ echo 'deb https://deb.nodesource.com/node_10.x bionic main' > /etc/apt/sources.list.d/nodesource.list
++ echo 'deb-src https://deb.nodesource.com/node_10.x bionic main' >> /etc/apt/sources.list.d/nodesource.list
+
+## Running `apt-get update` for you...
+
++ apt-get update
+Hit:1 http://us.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:3 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Get:5 https://deb.nodesource.com/node_10.x bionic InRelease [4,584 B]
+Get:6 https://deb.nodesource.com/node_10.x bionic/main amd64 Packages [766 B]
+Fetched 5,350 B in 2s (2,970 B/s)
+Reading package lists...
+
+## Run `sudo apt-get install -y nodejs` to install Node.js 10.x and npm
+## You may also need development tools to build native addons:
+     sudo apt-get install gcc g++ make
+## To install the Yarn package manager, run:
+     curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+     echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+     sudo apt-get update && sudo apt-get install yarn
+
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  intltool-debian libarchive-cpio-perl libarchive-zip-perl
+  libfile-stripnondeterminism-perl libmail-sendmail-perl
+  libsys-hostname-long-perl libtimedate-perl po-debconf ssl-cert
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  nodejs
+0 upgraded, 1 newly installed, 0 to remove and 192 not upgraded.
+Need to get 16.2 MB of archives.
+After this operation, 81.3 MB of additional disk space will be used.
+Get:1 https://deb.nodesource.com/node_10.x bionic/main amd64 nodejs amd64 10.22.0-1nodesource1 [16.2 MB]
+Fetched 16.2 MB in 1s (25.8 MB/s)
+Selecting previously unselected package nodejs.
+(Reading database ... 115971 files and directories currently installed.)
+Preparing to unpack .../nodejs_10.22.0-1nodesource1_amd64.deb ...
+Unpacking nodejs (10.22.0-1nodesource1) ...
+Setting up nodejs (10.22.0-1nodesource1) ...
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'build-aux'.
+libtoolize: copying file 'build-aux/ltmain.sh'
+libtoolize: putting macros in 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([m4])' to configure.ac,
+libtoolize: and rerunning libtoolize and aclocal.
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'build-aux'.
+libtoolize: copying file 'build-aux/ltmain.sh'
+libtoolize: putting macros in 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([m4])' to configure.ac,
+libtoolize: and rerunning libtoolize and aclocal.
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for a sed that does not truncate output... /bin/sed
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking whether make supports nested variables... (cached) yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.20... yes
+checking whether C compiler accepts -Wno-unused-result... yes
+checking size of void*... 8
+checking size of char... 1
+checking size of int... 4
+checking size of long... 8
+checking size of short... 2
+checking size of long long... 8
+checking size of pid_t... 4
+checking for ANSI C header files... (cached) yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking ifaddrs.h usability... yes
+checking ifaddrs.h presence... yes
+checking for ifaddrs.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking regex.h usability... yes
+checking regex.h presence... yes
+checking for regex.h... yes
+checking semaphore.h usability... yes
+checking semaphore.h presence... yes
+checking for semaphore.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking for unistd.h... (cached) yes
+checking net/if_dl.h usability... no
+checking net/if_dl.h presence... no
+checking for net/if_dl.h... no
+checking net/if.h usability... yes
+checking net/if.h presence... yes
+checking for net/if.h... yes
+checking netinet/ether.h usability... yes
+checking netinet/ether.h presence... yes
+checking for netinet/ether.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking netinet/in_systm.h usability... yes
+checking netinet/in_systm.h presence... yes
+checking for netinet/in_systm.h... yes
+checking netinet/udp.h usability... yes
+checking netinet/udp.h presence... yes
+checking for netinet/udp.h... yes
+checking netinet/tcp.h usability... yes
+checking netinet/tcp.h presence... yes
+checking for netinet/tcp.h... yes
+checking netinet/sctp.h usability... yes
+checking netinet/sctp.h presence... yes
+checking for netinet/sctp.h... yes
+checking usrsctp.h usability... no
+checking usrsctp.h presence... no
+checking for usrsctp.h... no
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/syslimits.h usability... no
+checking sys/syslimits.h presence... no
+checking for sys/syslimits.h... no
+checking for sys/types.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking sys/uio.h usability... yes
+checking sys/uio.h presence... yes
+checking for sys/uio.h... yes
+checking for netinet/ip.h... yes
+checking for netinet/ip6.h... yes
+checking for net/route.h... yes
+checking for netinet/ip_icmp.h... yes
+checking for netinet/icmp6.h... yes
+checking whether byte ordering is bigendian... no
+checking for struct tm.tm_gmtoff... yes
+checking for struct tm.__tm_gmtoff... no
+checking for struct sockaddr.sa_len... no
+checking for struct sockaddr_in.sin_len... no
+checking for struct sockaddr_in6.sin6_len... no
+checking for struct sockaddr_conn.sconn_len... no
+checking for socklen_t... yes
+checking for /dev/random... yes
+checking whether the compiler provides atomic builtins... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking for atexit... yes
+checking for gettimeofday... yes
+checking for memmove... yes
+checking for strerror... yes
+checking for inet_ntop... yes
+checking for inet_pton... yes
+checking for inet_aton... yes
+checking for sigaction... yes
+checking for sigwait... yes
+checking for sigsuspend... yes
+checking for stpcpy... yes
+checking for strcasecmp... yes
+checking for strtoul... yes
+checking for stricmp... no
+checking for writev... yes
+checking for utime... yes
+checking for utimes... yes
+checking for sem_timedwait... no
+checking for pthread_yield... no
+checking for sched_yield... yes
+checking for getenv... yes
+checking for putenv... yes
+checking for setenv... yes
+checking for unsetenv... yes
+checking for library containing gethostbyname... none required
+checking for library containing gethostname... none required
+checking for library containing socket... none required
+checking for library containing pthread_barrier_wait... -lpthread
+checking for library containing gnutls_global_set_log_level... -lgnutls
+checking for library containing sctp_sendmsg... -lsctp
+checking for YAML... yes
+checking for MONGOC... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating lib/core/include/core.h
+config.status: creating lib/core/src/Makefile
+config.status: creating lib/core/test/Makefile
+config.status: creating lib/core/Makefile
+config.status: creating lib/s1ap/asn1c/Makefile
+config.status: creating lib/s1ap/Makefile
+config.status: creating lib/nas/Makefile
+config.status: creating lib/fd/Makefile
+config.status: creating lib/gtp/Makefile
+config.status: creating lib/ipfw/Makefile
+config.status: creating lib/Makefile
+config.status: creating src/common/Makefile
+config.status: creating src/mme/Makefile
+config.status: creating src/hss/Makefile
+config.status: creating src/sgw/Makefile
+config.status: creating src/pgw/Makefile
+config.status: creating src/pcrf/Makefile
+config.status: creating src/Makefile
+config.status: creating support/config/nextepc.conf
+config.status: creating support/config/mme.conf
+config.status: creating support/config/sgw.conf
+config.status: creating support/config/pgw.conf
+config.status: creating support/config/hss.conf
+config.status: creating support/config/pcrf.conf
+config.status: creating support/config/Makefile
+config.status: creating support/freeDiameter/mme.conf
+config.status: creating support/freeDiameter/pgw.conf
+config.status: creating support/freeDiameter/hss.conf
+config.status: creating support/freeDiameter/pcrf.conf
+config.status: creating support/freeDiameter/Makefile
+config.status: creating support/systemd/nextepc-mmed.service
+config.status: creating support/systemd/nextepc-sgwd.service
+config.status: creating support/systemd/nextepc-pgwd.service
+config.status: creating support/systemd/nextepc-hssd.service
+config.status: creating support/systemd/nextepc-pcrfd.service
+config.status: creating support/systemd/Makefile
+config.status: creating support/logrotate/nextepc
+config.status: creating support/logrotate/Makefile
+config.status: creating support/newsyslog/nextepc.conf
+config.status: creating support/newsyslog/Makefile
+config.status: creating support/Makefile
+config.status: creating test/sample.conf
+config.status: creating test/sample-volte.conf
+config.status: creating test/Makefile
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing test/atconfig commands
+config.status: executing depfiles commands
+config.status: executing libtool commands
+=== configuring in lib/freeDiameter-1.2.1 (/opt/nextepc/lib/freeDiameter-1.2.1)
+configure: running /bin/bash ./configure --disable-option-checking '--prefix=/opt/nextepc/install'  --cache-file=/dev/null --srcdir=.
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking whether make supports nested variables... (cached) yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for bison... bison -y
+checking for flex... flex
+checking lex output file root... lex.yy
+checking lex library... -lfl
+checking whether yytext is a pointer... yes
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... no
+checking for dlopen in -ldl... yes
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... no
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether byte ordering is bigendian... no
+checking for strndup... yes
+checking whether ntohll is declared... no
+checking whether AI_ADDRCONFIG is declared... yes
+checking for library containing clock_gettime... none required
+checking for library containing dlopen... -ldl
+checking for library containing pthread_barrier_wait... -lpthread
+checking for library containing sctp_sendmsg... -lsctp
+checking for library containing gnutls_global_init... -lgnutls
+checking for library containing gnutls_hash... none required
+checking for library containing gnutls_transport_set_vec_push_function... none required
+checking for library containing gnutls_x509_trust_list_verify_crt... none required
+checking for library containing gnutls_handshake_set_timeout... none required
+checking for library containing gcry_control... -lgcrypt
+checking for library containing idna_strerror... -lidn
+checking whether sctp_connectx function accepts 4 arguments... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating include/freeDiameter/freeDiameter-host.h
+config.status: creating libfdproto/Makefile
+config.status: creating libfdcore/Makefile
+config.status: creating extensions/dbg_msg_dumps/Makefile
+config.status: creating extensions/dict_rfc5777/Makefile
+config.status: creating extensions/dict_mip6i/Makefile
+config.status: creating extensions/dict_nasreq/Makefile
+config.status: creating extensions/dict_nas_mipv6/Makefile
+config.status: creating extensions/dict_dcca/Makefile
+config.status: creating extensions/dict_dcca_3gpp/Makefile
+config.status: creating extensions/dict_s6a/Makefile
+config.status: creating extensions/Makefile
+config.status: creating Makefile
+config.status: creating include/freeDiameter/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+FreeDiameter configuration
+--------------------
+version                 : 1.2.1
+host                    : x86_64-pc-linux-gnu
+source code location    : .
+compiler                : gcc
+compiler flags          : -g -O2
+linker flags            :  -lidn -lgcrypt -lgnutls -lsctp -lpthread -ldl 
+config directory        : /opt/nextepc/install/etc/nextepc/freeDiameter
+extensions directory    : /opt/nextepc/install/lib/nextepc
+
+
+NextEPC configuration
+--------------------
+version                 : 0.3.10
+host                    : x86_64-pc-linux-gnu
+source code location    : .
+compiler                : gcc
+compiler flags          : -g -O2 -Wno-unused-result  -I/usr/include/libmongoc-1.0 -I/usr/include/libbson-1.0
+linker flags            :  -lsctp -lgnutls -lpthread  -lyaml -lmongoc-1.0 -lssl -lcrypto -lrt -lresolv -lz -lsnappy -lbson-1.0
+bin directory           : /opt/nextepc/install/bin
+lib directory           : /opt/nextepc/install/lib/nextepc
+config directory        : /opt/nextepc/install/etc/nextepc
+log directory           : /opt/nextepc/install/var/log/nextepc
+
+make  all-recursive
+make[1]: Entering directory '/opt/nextepc'
+Making all in lib
+make[2]: Entering directory '/opt/nextepc/lib'
+Making all in freeDiameter-1.2.1
+make[3]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1'
+Making all in libfdproto
+make[4]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/libfdproto'
+  CC       dictionary.lo
+  CC       dictionary_functions.lo
+  CC       dispatch.lo
+  CC       fifo.lo
+  CC       init.lo
+  CC       lists.lo
+  CC       log.lo
+  CC       messages.lo
+  CC       ostr.lo
+  CC       portability.lo
+  CC       rt_data.lo
+  CC       sessions.lo
+  CC       utils.lo
+  CC       version.lo
+  CCLD     libfdproto.la
+make[4]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/libfdproto'
+Making all in libfdcore
+make[4]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/libfdcore'
+  YACC     fdd.tab.c
+updating fdd.tab.h
+make  all-am
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/libfdcore'
+  CC       apps.lo
+  CC       config.lo
+  CC       core.lo
+  CC       cnxctx.lo
+  CC       endpoints.lo
+  CC       events.lo
+  CC       extensions.lo
+  CC       fifo_stats.lo
+  CC       hooks.lo
+  CC       dict_base_proto.lo
+  CC       messages.lo
+  CC       queues.lo
+  CC       peers.lo
+  CC       p_ce.lo
+  CC       p_cnx.lo
+  CC       p_dw.lo
+  CC       p_dp.lo
+  CC       p_expiry.lo
+  CC       p_out.lo
+  CC       p_psm.lo
+  CC       p_sr.lo
+  CC       routing_dispatch.lo
+  CC       server.lo
+  CC       tcp.lo
+  CC       fdd.tab.lo
+  LEX      lex.fdd.c
+  CC       version.lo
+  CC       sctp.lo
+updating lex.fdd.c
+  CC       sctp3436.lo
+  CC       lex.fdd.lo
+  CCLD     libfdcore.la
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/libfdcore'
+make[4]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/libfdcore'
+Making all in extensions
+make[4]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions'
+Making all in dbg_msg_dumps
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dbg_msg_dumps'
+  CC       dbg_msg_dumps.lo
+  CCLD     dbg_msg_dumps.la
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dbg_msg_dumps'
+Making all in dict_rfc5777
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_rfc5777'
+  CC       dict_rfc5777.lo
+  CCLD     dict_rfc5777.la
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_rfc5777'
+Making all in dict_mip6i
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_mip6i'
+  CC       dict_mip6i.lo
+  CCLD     dict_mip6i.la
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_mip6i'
+Making all in dict_nasreq
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_nasreq'
+  CC       dict_nasreq.lo
+  CCLD     dict_nasreq.la
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_nasreq'
+Making all in dict_nas_mipv6
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_nas_mipv6'
+  CC       dict_nas_mipv6.lo
+  CCLD     dict_nas_mipv6.la
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_nas_mipv6'
+Making all in dict_dcca
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_dcca'
+  CC       dict_dcca.lo
+  CCLD     dict_dcca.la
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_dcca'
+Making all in dict_dcca_3gpp
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_dcca_3gpp'
+  CC       dict_dcca_3gpp.lo
+  CCLD     dict_dcca_3gpp.la
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_dcca_3gpp'
+Making all in dict_s6a
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_s6a'
+  CC       dict_s6a.lo
+  CCLD     dict_s6a.la
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_s6a'
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions'
+make[5]: Nothing to be done for 'all-am'.
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions'
+make[4]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions'
+make[4]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1'
+make[3]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1'
+Making all in ipfw
+make[3]: Entering directory '/opt/nextepc/lib/ipfw'
+  CC       ipfw2.lo
+  CC       dummynet.lo
+  CC       ipv6.lo
+  CC       tables.lo
+  CC       expand_number.lo
+  CC       humanize_number.lo
+  CC       glue.lo
+  CCLD     libipfw.la
+make[3]: Leaving directory '/opt/nextepc/lib/ipfw'
+Making all in core
+make[3]: Entering directory '/opt/nextepc/lib/core'
+Making all in src
+make[4]: Entering directory '/opt/nextepc/lib/core/src'
+  CC       debug.lo
+  CC       version.lo
+  CC       fsm.lo
+  CC       msgq.lo
+  CC       ringbuf.lo
+  CC       timer.lo
+  CC       tlv.lo
+  CC       tlv_msg.lo
+  CC       hash.lo
+  CC       aes.lo
+  CC       aes_cmac.lo
+  CC       sha1.lo
+  CC       sha1_hmac.lo
+  CC       sha2.lo
+  CC       sha2_hmac.lo
+  CC       misc.lo
+  CC       event.lo
+  CC       3gpp_types.lo
+  CC       unix/start.lo
+  CC       unix/errorcodes.lo
+  CC       unix/pkbuf.lo
+  CC       unix/rand.lo
+  CC       unix/time.lo
+  CC       unix/file.lo
+  CC       unix/thread.lo
+  CC       unix/signal.lo
+  CC       unix/atomic.lo
+  CC       unix/cond.lo
+  CC       unix/mutex.lo
+  CC       unix/rwlock.lo
+  CC       unix/semaphore.lo
+  CC       unix/socket.lo
+  CC       unix/sockaddr.lo
+  CC       unix/udp.lo
+  CC       unix/tcp.lo
+  CC       unix/tun.lo
+  CC       unix/sctp.lo
+  CCLD     libcore.la
+make[4]: Leaving directory '/opt/nextepc/lib/core/src'
+Making all in test
+make[4]: Entering directory '/opt/nextepc/lib/core/test'
+  CC       abts.o
+  CC       testds.o
+  CC       testfsm.o
+  CC       testsock.o
+  CC       testthread.o
+  CC       testtlv.o
+  CC       testaes.o
+  CC       testfile.o
+  CC       testlock.o
+  CC       testatomic.o
+  CC       testsha.o
+  CC       testtime.o
+  CC       testdir.o
+  CC       testfilecopy.o
+  CC       testmsgq.o
+  CC       testsleep.o
+  CC       testtimer.o
+  CC       testpkbuf.o
+  CC       testmisc.o
+  CC       testhash.o
+  CC       test3gpp.o
+  CC       testutil.o
+  CC       testsctp.o
+  CCLD     testcore
+make[4]: Leaving directory '/opt/nextepc/lib/core/test'
+make[4]: Entering directory '/opt/nextepc/lib/core'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/opt/nextepc/lib/core'
+make[3]: Leaving directory '/opt/nextepc/lib/core'
+Making all in s1ap
+make[3]: Entering directory '/opt/nextepc/lib/s1ap'
+Making all in asn1c
+make[4]: Entering directory '/opt/nextepc/lib/s1ap/asn1c'
+  CC       S1AP_S1AP-PDU.lo
+  CC       S1AP_InitiatingMessage.lo
+  CC       S1AP_SuccessfulOutcome.lo
+  CC       S1AP_UnsuccessfulOutcome.lo
+  CC       S1AP_E-RAB-IE-ContainerList.lo
+  CC       S1AP_HandoverRequired.lo
+  CC       S1AP_HandoverCommand.lo
+  CC       S1AP_E-RABSubjecttoDataForwardingList.lo
+  CC       S1AP_E-RABDataForwardingItem.lo
+  CC       S1AP_HandoverPreparationFailure.lo
+  CC       S1AP_HandoverRequest.lo
+  CC       S1AP_E-RABToBeSetupListHOReq.lo
+  CC       S1AP_E-RABToBeSetupItemHOReq.lo
+  CC       S1AP_HandoverRequestAcknowledge.lo
+  CC       S1AP_E-RABAdmittedList.lo
+  CC       S1AP_E-RABAdmittedItem.lo
+  CC       S1AP_E-RABFailedtoSetupListHOReqAck.lo
+  CC       S1AP_E-RABFailedToSetupItemHOReqAck.lo
+  CC       S1AP_HandoverFailure.lo
+  CC       S1AP_HandoverNotify.lo
+  CC       S1AP_PathSwitchRequest.lo
+  CC       S1AP_E-RABToBeSwitchedDLList.lo
+  CC       S1AP_E-RABToBeSwitchedDLItem.lo
+  CC       S1AP_PathSwitchRequestAcknowledge.lo
+  CC       S1AP_E-RABToBeSwitchedULList.lo
+  CC       S1AP_E-RABToBeSwitchedULItem.lo
+  CC       S1AP_PathSwitchRequestFailure.lo
+  CC       S1AP_HandoverCancel.lo
+  CC       S1AP_HandoverCancelAcknowledge.lo
+  CC       S1AP_E-RABSetupRequest.lo
+  CC       S1AP_E-RABToBeSetupListBearerSUReq.lo
+  CC       S1AP_E-RABToBeSetupItemBearerSUReq.lo
+  CC       S1AP_E-RABSetupResponse.lo
+  CC       S1AP_E-RABSetupListBearerSURes.lo
+  CC       S1AP_E-RABSetupItemBearerSURes.lo
+  CC       S1AP_E-RABModifyRequest.lo
+  CC       S1AP_E-RABToBeModifiedListBearerModReq.lo
+  CC       S1AP_E-RABToBeModifiedItemBearerModReq.lo
+  CC       S1AP_E-RABModifyResponse.lo
+  CC       S1AP_E-RABModifyListBearerModRes.lo
+  CC       S1AP_E-RABModifyItemBearerModRes.lo
+  CC       S1AP_E-RABReleaseCommand.lo
+  CC       S1AP_E-RABReleaseResponse.lo
+  CC       S1AP_E-RABReleaseListBearerRelComp.lo
+  CC       S1AP_E-RABReleaseItemBearerRelComp.lo
+  CC       S1AP_E-RABReleaseIndication.lo
+  CC       S1AP_InitialContextSetupRequest.lo
+  CC       S1AP_E-RABToBeSetupListCtxtSUReq.lo
+  CC       S1AP_E-RABToBeSetupItemCtxtSUReq.lo
+  CC       S1AP_InitialContextSetupResponse.lo
+  CC       S1AP_E-RABSetupListCtxtSURes.lo
+  CC       S1AP_E-RABSetupItemCtxtSURes.lo
+  CC       S1AP_InitialContextSetupFailure.lo
+  CC       S1AP_Paging.lo
+  CC       S1AP_TAIList.lo
+  CC       S1AP_TAIItem.lo
+  CC       S1AP_UEContextReleaseRequest.lo
+  CC       S1AP_UEContextReleaseCommand.lo
+  CC       S1AP_UEContextReleaseComplete.lo
+  CC       S1AP_UEContextModificationRequest.lo
+  CC       S1AP_UEContextModificationResponse.lo
+  CC       S1AP_UEContextModificationFailure.lo
+  CC       S1AP_UERadioCapabilityMatchRequest.lo
+  CC       S1AP_UERadioCapabilityMatchResponse.lo
+  CC       S1AP_DownlinkNASTransport.lo
+  CC       S1AP_InitialUEMessage.lo
+  CC       S1AP_UplinkNASTransport.lo
+  CC       S1AP_NASNonDeliveryIndication.lo
+  CC       S1AP_RerouteNASRequest.lo
+  CC       S1AP_NASDeliveryIndication.lo
+  CC       S1AP_Reset.lo
+  CC       S1AP_ResetType.lo
+  CC       S1AP_ResetAll.lo
+  CC       S1AP_UE-associatedLogicalS1-ConnectionListRes.lo
+  CC       S1AP_ResetAcknowledge.lo
+  CC       S1AP_UE-associatedLogicalS1-ConnectionListResAck.lo
+  CC       S1AP_ErrorIndication.lo
+  CC       S1AP_S1SetupRequest.lo
+  CC       S1AP_S1SetupResponse.lo
+  CC       S1AP_S1SetupFailure.lo
+  CC       S1AP_ENBConfigurationUpdate.lo
+  CC       S1AP_ENBConfigurationUpdateAcknowledge.lo
+  CC       S1AP_ENBConfigurationUpdateFailure.lo
+  CC       S1AP_MMEConfigurationUpdate.lo
+  CC       S1AP_MMEConfigurationUpdateAcknowledge.lo
+  CC       S1AP_MMEConfigurationUpdateFailure.lo
+  CC       S1AP_DownlinkS1cdma2000tunnelling.lo
+  CC       S1AP_UplinkS1cdma2000tunnelling.lo
+  CC       S1AP_UECapabilityInfoIndication.lo
+  CC       S1AP_ENBStatusTransfer.lo
+  CC       S1AP_MMEStatusTransfer.lo
+  CC       S1AP_TraceStart.lo
+  CC       S1AP_TraceFailureIndication.lo
+  CC       S1AP_DeactivateTrace.lo
+  CC       S1AP_CellTrafficTrace.lo
+  CC       S1AP_LocationReportingControl.lo
+  CC       S1AP_LocationReportingFailureIndication.lo
+  CC       S1AP_LocationReport.lo
+  CC       S1AP_OverloadStart.lo
+  CC       S1AP_OverloadStop.lo
+  CC       S1AP_WriteReplaceWarningRequest.lo
+  CC       S1AP_WriteReplaceWarningResponse.lo
+  CC       S1AP_ENBDirectInformationTransfer.lo
+  CC       S1AP_Inter-SystemInformationTransferType.lo
+  CC       S1AP_MMEDirectInformationTransfer.lo
+  CC       S1AP_ENBConfigurationTransfer.lo
+  CC       S1AP_MMEConfigurationTransfer.lo
+  CC       S1AP_PrivateMessage.lo
+  CC       S1AP_KillRequest.lo
+  CC       S1AP_KillResponse.lo
+  CC       S1AP_PWSRestartIndication.lo
+  CC       S1AP_PWSFailureIndication.lo
+  CC       S1AP_DownlinkUEAssociatedLPPaTransport.lo
+  CC       S1AP_UplinkUEAssociatedLPPaTransport.lo
+  CC       S1AP_DownlinkNonUEAssociatedLPPaTransport.lo
+  CC       S1AP_UplinkNonUEAssociatedLPPaTransport.lo
+  CC       S1AP_E-RABModificationIndication.lo
+  CC       S1AP_E-RABToBeModifiedListBearerModInd.lo
+  CC       S1AP_E-RABToBeModifiedItemBearerModInd.lo
+  CC       S1AP_E-RABNotToBeModifiedListBearerModInd.lo
+  CC       S1AP_E-RABNotToBeModifiedItemBearerModInd.lo
+  CC       S1AP_CSGMembershipInfo.lo
+  CC       S1AP_E-RABModificationConfirm.lo
+  CC       S1AP_E-RABModifyListBearerModConf.lo
+  CC       S1AP_E-RABModifyItemBearerModConf.lo
+  CC       S1AP_UEContextModificationIndication.lo
+  CC       S1AP_UEContextModificationConfirm.lo
+  CC       S1AP_UEContextSuspendRequest.lo
+  CC       S1AP_UEContextSuspendResponse.lo
+  CC       S1AP_UEContextResumeRequest.lo
+  CC       S1AP_E-RABFailedToResumeListResumeReq.lo
+  CC       S1AP_E-RABFailedToResumeItemResumeReq.lo
+  CC       S1AP_UEContextResumeResponse.lo
+  CC       S1AP_E-RABFailedToResumeListResumeRes.lo
+  CC       S1AP_E-RABFailedToResumeItemResumeRes.lo
+  CC       S1AP_UEContextResumeFailure.lo
+  CC       S1AP_ConnectionEstablishmentIndication.lo
+  CC       S1AP_RetrieveUEInformation.lo
+  CC       S1AP_UEInformationTransfer.lo
+  CC       S1AP_ENBCPRelocationIndication.lo
+  CC       S1AP_MMECPRelocationIndication.lo
+  CC       S1AP_Additional-GUTI.lo
+  CC       S1AP_AreaScopeOfMDT.lo
+  CC       S1AP_AllocationAndRetentionPriority.lo
+  CC       S1AP_AssistanceDataForCECapableUEs.lo
+  CC       S1AP_AssistanceDataForPaging.lo
+  CC       S1AP_AssistanceDataForRecommendedCells.lo
+  CC       S1AP_Bearers-SubjectToStatusTransferList.lo
+  CC       S1AP_Bearers-SubjectToStatusTransfer-Item.lo
+  CC       S1AP_BearerType.lo
+  CC       S1AP_BitRate.lo
+  CC       S1AP_BPLMNs.lo
+  CC       S1AP_BroadcastCancelledAreaList.lo
+  CC       S1AP_BroadcastCompletedAreaList.lo
+  CC       S1AP_CancelledCellinEAI.lo
+  CC       S1AP_CancelledCellinEAI-Item.lo
+  CC       S1AP_CancelledCellinTAI.lo
+  CC       S1AP_CancelledCellinTAI-Item.lo
+  CC       S1AP_Cause.lo
+  CC       S1AP_CauseMisc.lo
+  CC       S1AP_CauseProtocol.lo
+  CC       S1AP_CauseRadioNetwork.lo
+  CC       S1AP_CauseTransport.lo
+  CC       S1AP_CauseNas.lo
+  CC       S1AP_CellAccessMode.lo
+  CC       S1AP_CellIdentifierAndCELevelForCECapableUEs.lo
+  CC       S1AP_CELevel.lo
+  CC       S1AP_CE-mode-B-SupportIndicator.lo
+  CC       S1AP_CellIdentity.lo
+  CC       S1AP_CellID-Broadcast.lo
+  CC       S1AP_CellID-Broadcast-Item.lo
+  CC       S1AP_CellID-Cancelled.lo
+  CC       S1AP_CellID-Cancelled-Item.lo
+  CC       S1AP_CellBasedMDT.lo
+  CC       S1AP_CellIdListforMDT.lo
+  CC       S1AP_Cdma2000PDU.lo
+  CC       S1AP_Cdma2000RATType.lo
+  CC       S1AP_Cdma2000SectorID.lo
+  CC       S1AP_Cdma2000HOStatus.lo
+  CC       S1AP_Cdma2000HORequiredIndication.lo
+  CC       S1AP_Cdma2000OneXSRVCCInfo.lo
+  CC       S1AP_Cdma2000OneXMEID.lo
+  CC       S1AP_Cdma2000OneXMSI.lo
+  CC       S1AP_Cdma2000OneXPilot.lo
+  CC       S1AP_Cdma2000OneXRAND.lo
+  CC       S1AP_Cell-Size.lo
+  CC       S1AP_CellType.lo
+  CC       S1AP_CGI.lo
+  CC       S1AP_CI.lo
+  CC       S1AP_CNDomain.lo
+  CC       S1AP_ConcurrentWarningMessageIndicator.lo
+  CC       S1AP_Correlation-ID.lo
+  CC       S1AP_CSFallbackIndicator.lo
+  CC       S1AP_AdditionalCSFallbackIndicator.lo
+  CC       S1AP_CSG-Id.lo
+  CC       S1AP_CSG-IdList.lo
+  CC       S1AP_CSG-IdList-Item.lo
+  CC       S1AP_CSGMembershipStatus.lo
+  CC       S1AP_COUNTvalue.lo
+  CC       S1AP_COUNTValueExtended.lo
+  CC       S1AP_COUNTvaluePDCP-SNlength18.lo
+  CC       S1AP_Coverage-Level.lo
+  CC       S1AP_CriticalityDiagnostics.lo
+  CC       S1AP_CriticalityDiagnostics-IE-List.lo
+  CC       S1AP_CriticalityDiagnostics-IE-Item.lo
+  CC       S1AP_DataCodingScheme.lo
+  CC       S1AP_DCN-ID.lo
+  CC       S1AP_ServedDCNs.lo
+  CC       S1AP_ServedDCNsItem.lo
+  CC       S1AP_DL-CP-SecurityInformation.lo
+  CC       S1AP_DL-Forwarding.lo
+  CC       S1AP_DL-NAS-MAC.lo
+  CC       S1AP_Direct-Forwarding-Path-Availability.lo
+  CC       S1AP_Data-Forwarding-Not-Possible.lo
+  CC       S1AP_DLNASPDUDeliveryAckRequest.lo
+  CC       S1AP_EARFCN.lo
+  CC       S1AP_ECGIList.lo
+  CC       S1AP_PWSfailedECGIList.lo
+  CC       S1AP_EmergencyAreaIDList.lo
+  CC       S1AP_EmergencyAreaID.lo
+  CC       S1AP_EmergencyAreaID-Broadcast.lo
+  CC       S1AP_EmergencyAreaID-Broadcast-Item.lo
+  CC       S1AP_EmergencyAreaID-Cancelled.lo
+  CC       S1AP_EmergencyAreaID-Cancelled-Item.lo
+  CC       S1AP_CompletedCellinEAI.lo
+  CC       S1AP_CompletedCellinEAI-Item.lo
+  CC       S1AP_ECGI-List.lo
+  CC       S1AP_EmergencyAreaIDListForRestart.lo
+  CC       S1AP_ENB-ID.lo
+  CC       S1AP_GERAN-Cell-ID.lo
+  CC       S1AP_Global-ENB-ID.lo
+  CC       S1AP_GUMMEIList.lo
+  CC       S1AP_ENB-StatusTransfer-TransparentContainer.lo
+  CC       S1AP_ENB-UE-S1AP-ID.lo
+  CC       S1AP_ENBname.lo
+  CC       S1AP_ENBX2TLAs.lo
+  CC       S1AP_EncryptionAlgorithms.lo
+  CC       S1AP_EnhancedCoverageRestricted.lo
+  CC       S1AP_EPLMNs.lo
+  CC       S1AP_EventType.lo
+  CC       S1AP_E-RAB-ID.lo
+  CC       S1AP_E-RABInformationList.lo
+  CC       S1AP_E-RABInformationListItem.lo
+  CC       S1AP_E-RABList.lo
+  CC       S1AP_E-RABItem.lo
+  CC       S1AP_E-RABLevelQoSParameters.lo
+  CC       S1AP_EUTRAN-CGI.lo
+  CC       S1AP_EUTRANRoundTripDelayEstimationInfo.lo
+  CC       S1AP_ExpectedUEBehaviour.lo
+  CC       S1AP_ExpectedUEActivityBehaviour.lo
+  CC       S1AP_ExpectedActivityPeriod.lo
+  CC       S1AP_ExpectedIdlePeriod.lo
+  CC       S1AP_SourceOfUEActivityBehaviourInformation.lo
+  CC       S1AP_ExpectedHOInterval.lo
+  CC       S1AP_ExtendedRNC-ID.lo
+  CC       S1AP_ExtendedRepetitionPeriod.lo
+  CC       S1AP_Extended-UEIdentityIndexValue.lo
+  CC       S1AP_ForbiddenInterRATs.lo
+  CC       S1AP_ForbiddenTAs.lo
+  CC       S1AP_ForbiddenTAs-Item.lo
+  CC       S1AP_ForbiddenTACs.lo
+  CC       S1AP_ForbiddenLAs.lo
+  CC       S1AP_ForbiddenLAs-Item.lo
+  CC       S1AP_ForbiddenLACs.lo
+  CC       S1AP_GBR-QosInformation.lo
+  CC       S1AP_GTP-TEID.lo
+  CC       S1AP_GUMMEI.lo
+  CC       S1AP_GUMMEIType.lo
+  CC       S1AP_GWContextReleaseIndication.lo
+  CC       S1AP_HandoverRestrictionList.lo
+  CC       S1AP_HandoverType.lo
+  CC       S1AP_HFN.lo
+  CC       S1AP_HFNModified.lo
+  CC       S1AP_HFNforPDCP-SNlength18.lo
+  CC       S1AP_Masked-IMEISV.lo
+  CC       S1AP_ImmediateMDT.lo
+  CC       S1AP_IMSI.lo
+  CC       S1AP_InformationOnRecommendedCellsAndENBsForPaging.lo
+  CC       S1AP_IntegrityProtectionAlgorithms.lo
+  CC       S1AP_IntendedNumberOfPagingAttempts.lo
+  CC       S1AP_InterfacesToTrace.lo
+  CC       S1AP_KillAllWarningMessages.lo
+  CC       S1AP_LAC.lo
+  CC       S1AP_LAI.lo
+  CC       S1AP_LastVisitedCell-Item.lo
+  CC       S1AP_LastVisitedEUTRANCellInformation.lo
+  CC       S1AP_LastVisitedUTRANCellInformation.lo
+  CC       S1AP_LastVisitedGERANCellInformation.lo
+  CC       S1AP_L3-Information.lo
+  CC       S1AP_LPPa-PDU.lo
+  CC       S1AP_LHN-ID.lo
+  CC       S1AP_Links-to-log.lo
+  CC       S1AP_ListeningSubframePattern.lo
+  CC       S1AP_LoggedMDT.lo
+  CC       S1AP_LoggingInterval.lo
+  CC       S1AP_LoggingDuration.lo
+  CC       S1AP_LoggedMBSFNMDT.lo
+  CC       S1AP_M3Configuration.lo
+  CC       S1AP_M3period.lo
+  CC       S1AP_M4Configuration.lo
+  CC       S1AP_M4period.lo
+  CC       S1AP_M5Configuration.lo
+  CC       S1AP_M5period.lo
+  CC       S1AP_M6Configuration.lo
+  CC       S1AP_M6report-Interval.lo
+  CC       S1AP_M6delay-threshold.lo
+  CC       S1AP_M7Configuration.lo
+  CC       S1AP_M7period.lo
+  CC       S1AP_MDT-Activation.lo
+  CC       S1AP_MDT-Location-Info.lo
+  CC       S1AP_MDT-Configuration.lo
+  CC       S1AP_ManagementBasedMDTAllowed.lo
+  CC       S1AP_MBSFN-ResultToLog.lo
+  CC       S1AP_MBSFN-ResultToLogInfo.lo
+  CC       S1AP_MDTPLMNList.lo
+  CC       S1AP_PrivacyIndicator.lo
+  CC       S1AP_MDTMode.lo
+  CC       S1AP_MDTMode-Extension.lo
+  CC       S1AP_MeasurementsToActivate.lo
+  CC       S1AP_MeasurementThresholdA2.lo
+  CC       S1AP_MessageIdentifier.lo
+  CC       S1AP_MobilityInformation.lo
+  CC       S1AP_MMEname.lo
+  CC       S1AP_MMEPagingTarget.lo
+  CC       S1AP_MMERelaySupportIndicator.lo
+  CC       S1AP_MME-Group-ID.lo
+  CC       S1AP_MME-Code.lo
+  CC       S1AP_MME-UE-S1AP-ID.lo
+  CC       S1AP_M-TMSI.lo
+  CC       S1AP_MSClassmark2.lo
+  CC       S1AP_MSClassmark3.lo
+  CC       S1AP_MutingAvailabilityIndication.lo
+  CC       S1AP_MutingPatternInformation.lo
+  CC       S1AP_NAS-PDU.lo
+  CC       S1AP_NASSecurityParametersfromE-UTRAN.lo
+  CC       S1AP_NASSecurityParameterstoE-UTRAN.lo
+  CC       S1AP_NB-IoT-DefaultPagingDRX.lo
+  CC       S1AP_NB-IoT-Paging-eDRXInformation.lo
+  CC       S1AP_NB-IoT-Paging-eDRX-Cycle.lo
+  CC       S1AP_NB-IoT-PagingTimeWindow.lo
+  CC       S1AP_NB-IoT-UEIdentityIndexValue.lo
+  CC       S1AP_NextPagingAreaScope.lo
+  CC       S1AP_NumberofBroadcastRequest.lo
+  CC       S1AP_NumberOfBroadcasts.lo
+  CC       S1AP_OldBSS-ToNewBSS-Information.lo
+  CC       S1AP_OverloadAction.lo
+  CC       S1AP_OverloadResponse.lo
+  CC       S1AP_PagingAttemptInformation.lo
+  CC       S1AP_PagingAttemptCount.lo
+  CC       S1AP_Paging-eDRXInformation.lo
+  CC       S1AP_Paging-eDRX-Cycle.lo
+  CC       S1AP_PagingTimeWindow.lo
+  CC       S1AP_PagingDRX.lo
+  CC       S1AP_PagingPriority.lo
+  CC       S1AP_PDCP-SN.lo
+  CC       S1AP_PDCP-SNExtended.lo
+  CC       S1AP_PDCP-SNlength18.lo
+  CC       S1AP_M1PeriodicReporting.lo
+  CC       S1AP_PLMNidentity.lo
+  CC       S1AP_Port-Number.lo
+  CC       S1AP_Pre-emptionCapability.lo
+  CC       S1AP_Pre-emptionVulnerability.lo
+  CC       S1AP_PriorityLevel.lo
+  CC       S1AP_ProSeAuthorized.lo
+  CC       S1AP_ProSeDirectDiscovery.lo
+  CC       S1AP_ProSeUEtoNetworkRelaying.lo
+  CC       S1AP_ProSeDirectCommunication.lo
+  CC       S1AP_PS-ServiceNotAvailable.lo
+  CC       S1AP_QCI.lo
+  CC       S1AP_ReceiveStatusofULPDCPSDUs.lo
+  CC       S1AP_ReceiveStatusOfULPDCPSDUsExtended.lo
+  CC       S1AP_ReceiveStatusOfULPDCPSDUsPDCP-SNlength18.lo
+  CC       S1AP_RecommendedCellsForPaging.lo
+  CC       S1AP_RecommendedCellList.lo
+  CC       S1AP_RecommendedCellItem.lo
+  CC       S1AP_RecommendedENBsForPaging.lo
+  CC       S1AP_RecommendedENBList.lo
+  CC       S1AP_RecommendedENBItem.lo
+  CC       S1AP_RelativeMMECapacity.lo
+  CC       S1AP_RelayNode-Indicator.lo
+  CC       S1AP_RAC.lo
+  CC       S1AP_RAT-Type.lo
+  CC       S1AP_ReportAmountMDT.lo
+  CC       S1AP_ReportIntervalMDT.lo
+  CC       S1AP_M1ReportingTrigger.lo
+  CC       S1AP_RequestType.lo
+  CC       S1AP_RIMTransfer.lo
+  CC       S1AP_RIMInformation.lo
+  CC       S1AP_RIMRoutingAddress.lo
+  CC       S1AP_ReportArea.lo
+  CC       S1AP_RepetitionPeriod.lo
+  CC       S1AP_RLFReportInformation.lo
+  CC       S1AP_RNC-ID.lo
+  CC       S1AP_RRC-Container.lo
+  CC       S1AP_RRC-Establishment-Cause.lo
+  CC       S1AP_ECGIListForRestart.lo
+  CC       S1AP_Routing-ID.lo
+  CC       S1AP_SecurityKey.lo
+  CC       S1AP_SecurityContext.lo
+  CC       S1AP_SerialNumber.lo
+  CC       S1AP_SONInformation.lo
+  CC       S1AP_SONInformation-Extension.lo
+  CC       S1AP_SONInformationRequest.lo
+  CC       S1AP_SONInformationReply.lo
+  CC       S1AP_SONInformationReport.lo
+  CC       S1AP_SONConfigurationTransfer.lo
+  CC       S1AP_SynchronisationInformation.lo
+  CC       S1AP_Source-ToTarget-TransparentContainer.lo
+  CC       S1AP_SourceBSS-ToTargetBSS-TransparentContainer.lo
+  CC       S1AP_SourceeNB-ID.lo
+  CC       S1AP_SRVCCOperationNotPossible.lo
+  CC       S1AP_SRVCCOperationPossible.lo
+  CC       S1AP_SRVCCHOIndication.lo
+  CC       S1AP_SourceeNB-ToTargeteNB-TransparentContainer.lo
+  CC       S1AP_SourceRNC-ToTargetRNC-TransparentContainer.lo
+  CC       S1AP_ServedGUMMEIs.lo
+  CC       S1AP_ServedGUMMEIsItem.lo
+  CC       S1AP_ServedGroupIDs.lo
+  CC       S1AP_ServedMMECs.lo
+  CC       S1AP_ServedPLMNs.lo
+  CC       S1AP_SubscriberProfileIDforRFP.lo
+  CC       S1AP_SupportedTAs.lo
+  CC       S1AP_SupportedTAs-Item.lo
+  CC       S1AP_StratumLevel.lo
+  CC       S1AP_SynchronisationStatus.lo
+  CC       S1AP_TimeSynchronisationInfo.lo
+  CC       S1AP_S-TMSI.lo
+  CC       S1AP_TAC.lo
+  CC       S1AP_TAIBasedMDT.lo
+  CC       S1AP_TAIListforMDT.lo
+  CC       S1AP_TAIListforWarning.lo
+  CC       S1AP_TAI.lo
+  CC       S1AP_TAI-Broadcast.lo
+  CC       S1AP_TAI-Broadcast-Item.lo
+  CC       S1AP_TAI-Cancelled.lo
+  CC       S1AP_TAI-Cancelled-Item.lo
+  CC       S1AP_TABasedMDT.lo
+  CC       S1AP_TAListforMDT.lo
+  CC       S1AP_CompletedCellinTAI.lo
+  CC       S1AP_CompletedCellinTAI-Item.lo
+  CC       S1AP_TBCD-STRING.lo
+  CC       S1AP_TargetID.lo
+  CC       S1AP_TargeteNB-ID.lo
+  CC       S1AP_TargetRNC-ID.lo
+  CC       S1AP_TargeteNB-ToSourceeNB-TransparentContainer.lo
+  CC       S1AP_Target-ToSource-TransparentContainer.lo
+  CC       S1AP_TargetRNC-ToSourceRNC-TransparentContainer.lo
+  CC       S1AP_TargetBSS-ToSourceBSS-TransparentContainer.lo
+  CC       S1AP_M1ThresholdEventA2.lo
+  CC       S1AP_Threshold-RSRP.lo
+  CC       S1AP_Threshold-RSRQ.lo
+  CC       S1AP_TimeToWait.lo
+  CC       S1AP_Time-UE-StayedInCell.lo
+  CC       S1AP_Time-UE-StayedInCell-EnhancedGranularity.lo
+  CC       S1AP_TransportInformation.lo
+  CC       S1AP_TransportLayerAddress.lo
+  CC       S1AP_TraceActivation.lo
+  CC       S1AP_TraceDepth.lo
+  CC       S1AP_E-UTRAN-Trace-ID.lo
+  CC       S1AP_TrafficLoadReductionIndication.lo
+  CC       S1AP_TunnelInformation.lo
+  CC       S1AP_TypeOfError.lo
+  CC       S1AP_TAIListForRestart.lo
+  CC       S1AP_UEAggregateMaximumBitrate.lo
+  CC       S1AP_UE-RetentionInformation.lo
+  CC       S1AP_UE-S1AP-IDs.lo
+  CC       S1AP_UE-S1AP-ID-pair.lo
+  CC       S1AP_UE-associatedLogicalS1-ConnectionItem.lo
+  CC       S1AP_UEIdentityIndexValue.lo
+  CC       S1AP_UE-HistoryInformation.lo
+  CC       S1AP_UE-HistoryInformationFromTheUE.lo
+  CC       S1AP_UEPagingID.lo
+  CC       S1AP_UERadioCapability.lo
+  CC       S1AP_UERadioCapabilityForPaging.lo
+  CC       S1AP_UE-RLF-Report-Container.lo
+  CC       S1AP_UE-RLF-Report-Container-for-extended-bands.lo
+  CC       S1AP_UESecurityCapabilities.lo
+  CC       S1AP_UESidelinkAggregateMaximumBitrate.lo
+  CC       S1AP_UE-Usage-Type.lo
+  CC       S1AP_UL-CP-SecurityInformation.lo
+  CC       S1AP_UL-NAS-MAC.lo
+  CC       S1AP_UL-NAS-Count.lo
+  CC       S1AP_UserLocationInformation.lo
+  CC       S1AP_UEUserPlaneCIoTSupportIndicator.lo
+  CC       S1AP_VoiceSupportMatchIndicator.lo
+  CC       S1AP_V2XServicesAuthorized.lo
+  CC       S1AP_VehicleUE.lo
+  CC       S1AP_PedestrianUE.lo
+  CC       S1AP_WarningAreaList.lo
+  CC       S1AP_WarningType.lo
+  CC       S1AP_WarningSecurityInfo.lo
+  CC       S1AP_WarningMessageContents.lo
+  CC       S1AP_X2TNLConfigurationInfo.lo
+  CC       S1AP_ENBX2ExtTLAs.lo
+  CC       S1AP_ENBX2ExtTLA.lo
+  CC       S1AP_ENBX2GTPTLAs.lo
+  CC       S1AP_ENBIndirectX2TransportLayerAddresses.lo
+  CC       S1AP_Criticality.lo
+  CC       S1AP_Presence.lo
+  CC       S1AP_PrivateIE-ID.lo
+  CC       S1AP_ProcedureCode.lo
+  CC       S1AP_ProtocolExtensionID.lo
+  CC       S1AP_ProtocolIE-ID.lo
+  CC       S1AP_TriggeringMessage.lo
+  CC       S1AP_ProtocolIE-Container.lo
+  CC       S1AP_ProtocolIE-SingleContainer.lo
+  CC       S1AP_ProtocolIE-Field.lo
+  CC       S1AP_ProtocolIE-ContainerList.lo
+  CC       S1AP_ProtocolExtensionContainer.lo
+  CC       S1AP_ProtocolExtensionField.lo
+  CC       S1AP_PrivateIE-Container.lo
+  CC       S1AP_PrivateIE-Field.lo
+  CC       ANY.lo
+  CC       OPEN_TYPE.lo
+  CC       BOOLEAN.lo
+  CC       INTEGER.lo
+  CC       NULL.lo
+  CC       NativeEnumerated.lo
+  CC       NativeInteger.lo
+  CC       OBJECT_IDENTIFIER.lo
+  CC       PrintableString.lo
+  CC       asn_SEQUENCE_OF.lo
+  CC       asn_SET_OF.lo
+  CC       constr_CHOICE.lo
+  CC       constr_SEQUENCE.lo
+  CC       constr_SEQUENCE_OF.lo
+  CC       constr_SET_OF.lo
+  CC       asn_application.lo
+  CC       asn_internal.lo
+  CC       asn_random_fill.lo
+  CC       asn_bit_data.lo
+  CC       OCTET_STRING.lo
+  CC       BIT_STRING.lo
+  CC       asn_codecs_prim.lo
+  CC       ber_tlv_length.lo
+  CC       ber_tlv_tag.lo
+  CC       ber_decoder.lo
+  CC       der_encoder.lo
+  CC       constr_TYPE.lo
+  CC       constraints.lo
+  CC       xer_support.lo
+  CC       xer_decoder.lo
+  CC       xer_encoder.lo
+  CC       per_support.lo
+  CC       per_decoder.lo
+  CC       per_encoder.lo
+  CC       per_opentype.lo
+  CC       oer_decoder.lo
+  CC       oer_encoder.lo
+  CC       oer_support.lo
+  CC       OPEN_TYPE_oer.lo
+  CC       INTEGER_oer.lo
+  CC       BIT_STRING_oer.lo
+  CC       OCTET_STRING_oer.lo
+  CC       NativeInteger_oer.lo
+  CC       NativeEnumerated_oer.lo
+  CC       constr_CHOICE_oer.lo
+  CC       constr_SEQUENCE_oer.lo
+  CC       constr_SET_OF_oer.lo
+  CCLD     libs1apasn1c.la
+make[4]: Leaving directory '/opt/nextepc/lib/s1ap/asn1c'
+make[4]: Entering directory '/opt/nextepc/lib/s1ap'
+  CC       s1ap_decoder.lo
+  CC       s1ap_encoder.lo
+  CC       s1ap_free.lo
+  CCLD     libs1ap.la
+make[4]: Leaving directory '/opt/nextepc/lib/s1ap'
+make[3]: Leaving directory '/opt/nextepc/lib/s1ap'
+Making all in nas
+make[3]: Entering directory '/opt/nextepc/lib/nas'
+  CC       nas_decoder.lo
+  CC       nas_encoder.lo
+  CC       nas_ies.lo
+  CC       nas_types.lo
+  CCLD     libnas.la
+make[3]: Leaving directory '/opt/nextepc/lib/nas'
+Making all in fd
+make[3]: Entering directory '/opt/nextepc/lib/fd'
+  CC       libapp_sip.lo
+  CC       fd_message.lo
+  CC       fd_logger.lo
+  CC       fd_config.lo
+  CC       fd_init.lo
+  CC       s6a/dict_init.lo
+  CC       gx/dict_init.lo
+  CC       gx/gx_message.lo
+  CC       rx/dict_init.lo
+  CC       rx/rx_message.lo
+  CCLD     libfd.la
+make[3]: Leaving directory '/opt/nextepc/lib/fd'
+Making all in gtp
+make[3]: Entering directory '/opt/nextepc/lib/gtp'
+  CC       gtp_message.lo
+  CC       gtp_types.lo
+  CC       gtp_conv.lo
+  CC       gtp_node.lo
+  CC       gtp_path.lo
+  CC       gtp_xact.lo
+  CCLD     libgtp.la
+make[3]: Leaving directory '/opt/nextepc/lib/gtp'
+make[3]: Entering directory '/opt/nextepc/lib'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/opt/nextepc/lib'
+make[2]: Leaving directory '/opt/nextepc/lib'
+Making all in src
+make[2]: Entering directory '/opt/nextepc/src'
+Making all in common
+make[3]: Entering directory '/opt/nextepc/src/common'
+  CC       context.lo
+  CC       application.lo
+  CC       yaml_helper.lo
+  CCLD     libcommon.la
+make[3]: Leaving directory '/opt/nextepc/src/common'
+Making all in mme
+make[3]: Entering directory '/opt/nextepc/src/mme'
+  CC       mme_kdf.lo
+  CC       kasumi.lo
+  CC       snow_3g.lo
+  CC       zuc.lo
+  CC       mme_init.lo
+  CC       mme_event.lo
+  CC       mme_context.lo
+  CC       s1ap_sm.lo
+  CC       s1ap_build.lo
+  CC       s1ap_handler.lo
+  CC       s1ap_conv.lo
+  CC       s1ap_path.lo
+  CC       mme_fd_path.lo
+  CC       mme_s6a_handler.lo
+  CC       nas_conv.lo
+  CC       nas_security.lo
+  CC       nas_path.lo
+  CC       emm_sm.lo
+  CC       emm_handler.lo
+  CC       emm_build.lo
+  CC       esm_sm.lo
+  CC       esm_handler.lo
+  CC       esm_build.lo
+  CC       mme_gtp_path.lo
+  CC       mme_s11_build.lo
+  CC       mme_s11_handler.lo
+  CC       mme_sm.lo
+  CC       mme_path.lo
+  CC       sbc_handler.lo
+  CC       s1ap_sctp.lo
+  CCLD     libmme.la
+make[3]: Leaving directory '/opt/nextepc/src/mme'
+Making all in hss
+make[3]: Entering directory '/opt/nextepc/src/hss'
+  CC       milenage.lo
+  CC       hss_auc.lo
+  CC       hss_init.lo
+  CC       hss_context.lo
+  CC       hss_fd_path.lo
+  CCLD     libhss.la
+make[3]: Leaving directory '/opt/nextepc/src/hss'
+Making all in sgw
+make[3]: Entering directory '/opt/nextepc/src/sgw'
+  CC       sgw_init.lo
+  CC       sgw_event.lo
+  CC       sgw_context.lo
+  CC       sgw_gtp_path.lo
+  CC       sgw_sm.lo
+  CC       sgw_s11_handler.lo
+  CC       sgw_s5c_handler.lo
+  CCLD     libsgw.la
+make[3]: Leaving directory '/opt/nextepc/src/sgw'
+Making all in pgw
+make[3]: Entering directory '/opt/nextepc/src/pgw'
+  CC       pgw_ipfw.lo
+  CC       pgw_init.lo
+  CC       pgw_event.lo
+  CC       pgw_context.lo
+  CC       pgw_sm.lo
+  CC       pgw_gtp_path.lo
+  CC       pgw_s5c_build.lo
+  CC       pgw_s5c_handler.lo
+  CC       pgw_fd_path.lo
+  CC       pgw_gx_handler.lo
+  CCLD     libpgw.la
+make[3]: Leaving directory '/opt/nextepc/src/pgw'
+Making all in pcrf
+make[3]: Entering directory '/opt/nextepc/src/pcrf'
+  CC       pcrf_init.lo
+  CC       pcrf_context.lo
+  CC       pcrf_fd_path.lo
+  CC       pcrf_gx_path.lo
+  CC       pcrf_rx_path.lo
+  CCLD     libpcrf.la
+make[3]: Leaving directory '/opt/nextepc/src/pcrf'
+make[3]: Entering directory '/opt/nextepc/src'
+  CC       mme.lo
+  CC       hss.lo
+  CC       sgw.lo
+  CC       pgw.lo
+  CC       pcrf.lo
+  CC       epc.lo
+  CCLD     libmme.la
+  CCLD     libhss.la
+  CCLD     libsgw.la
+  CCLD     libpgw.la
+  CCLD     libpcrf.la
+  CCLD     libepc.la
+copying selected object files to avoid basename conflicts...
+make[3]: Leaving directory '/opt/nextepc/src'
+make[2]: Leaving directory '/opt/nextepc/src'
+Making all in support
+make[2]: Entering directory '/opt/nextepc/support'
+Making all in config
+make[3]: Entering directory '/opt/nextepc/support/config'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/opt/nextepc/support/config'
+Making all in freeDiameter
+make[3]: Entering directory '/opt/nextepc/support/freeDiameter'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/opt/nextepc/support/freeDiameter'
+Making all in systemd
+make[3]: Entering directory '/opt/nextepc/support/systemd'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/opt/nextepc/support/systemd'
+Making all in logrotate
+make[3]: Entering directory '/opt/nextepc/support/logrotate'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/opt/nextepc/support/logrotate'
+Making all in newsyslog
+make[3]: Entering directory '/opt/nextepc/support/newsyslog'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/opt/nextepc/support/newsyslog'
+make[3]: Entering directory '/opt/nextepc/support'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/opt/nextepc/support'
+make[2]: Leaving directory '/opt/nextepc/support'
+Making all in test
+make[2]: Entering directory '/opt/nextepc/test'
+  CC       common/abts.o
+  CC       common/testpacket.o
+  CC       basic/testutil.o
+  CC       basic/s1ap_message_test.o
+  CC       basic/nas_message_test.o
+  CC       basic/gtp_message_test.o
+  CC       basic/security_test.o
+  CC       basic/s1setup_test.o
+  CC       basic/attach_test.o
+  CC       basic/volte_test.o
+  CC       basic/handover_test.o
+  CC       volte/testutil.o
+  CC       volte/testapp.o
+  CC       volte/pcscf_fd_path.o
+  CC       volte/volte_test.o
+  CCLD     testepc
+  CCLD     testvolte
+make[2]: Leaving directory '/opt/nextepc/test'
+make[2]: Entering directory '/opt/nextepc'
+  CC       main.o
+  CCLD     nextepc-mmed
+  CCLD     nextepc-hssd
+  CCLD     nextepc-sgwd
+  CCLD     nextepc-pgwd
+  CCLD     nextepc-pcrfd
+  CCLD     nextepc-epcd
+make[2]: Leaving directory '/opt/nextepc'
+make[1]: Leaving directory '/opt/nextepc'
+Making install in lib
+make[1]: Entering directory '/opt/nextepc/lib'
+Making install in freeDiameter-1.2.1
+make[2]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1'
+Making install in libfdproto
+make[3]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/libfdproto'
+make[4]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/libfdproto'
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libfdproto.la '/opt/nextepc/install/lib/nextepc'
+libtool: install: /usr/bin/install -c .libs/libfdproto.so.1.0.0 /opt/nextepc/install/lib/nextepc/libfdproto.so.1.0.0
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libfdproto.so.1.0.0 libfdproto.so.1 || { rm -f libfdproto.so.1 && ln -s libfdproto.so.1.0.0 libfdproto.so.1; }; })
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libfdproto.so.1.0.0 libfdproto.so || { rm -f libfdproto.so && ln -s libfdproto.so.1.0.0 libfdproto.so; }; })
+libtool: install: /usr/bin/install -c .libs/libfdproto.lai /opt/nextepc/install/lib/nextepc/libfdproto.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/libfdproto'
+make[3]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/libfdproto'
+Making install in libfdcore
+make[3]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/libfdcore'
+make  install-am
+make[4]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/libfdcore'
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/libfdcore'
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libfdcore.la '/opt/nextepc/install/lib/nextepc'
+libtool: install: (cd /opt/nextepc/lib/freeDiameter-1.2.1/libfdcore; /bin/bash "/opt/nextepc/lib/freeDiameter-1.2.1/libtool"  --silent --tag CC --mode=relink gcc -g -O2 -version-info 1:0:0 -o libfdcore.la -rpath /opt/nextepc/install/lib/nextepc apps.lo config.lo core.lo cnxctx.lo endpoints.lo events.lo extensions.lo fifo_stats.lo hooks.lo dict_base_proto.lo messages.lo queues.lo peers.lo p_ce.lo p_cnx.lo p_dw.lo p_dp.lo p_expiry.lo p_out.lo p_psm.lo p_sr.lo routing_dispatch.lo server.lo tcp.lo fdd.tab.lo lex.fdd.lo version.lo sctp.lo sctp3436.lo ../libfdproto/libfdproto.la -lidn -lgcrypt -lgnutls -lsctp -lpthread -ldl )
+libtool: install: /usr/bin/install -c .libs/libfdcore.so.1.0.0T /opt/nextepc/install/lib/nextepc/libfdcore.so.1.0.0
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libfdcore.so.1.0.0 libfdcore.so.1 || { rm -f libfdcore.so.1 && ln -s libfdcore.so.1.0.0 libfdcore.so.1; }; })
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libfdcore.so.1.0.0 libfdcore.so || { rm -f libfdcore.so && ln -s libfdcore.so.1.0.0 libfdcore.so; }; })
+libtool: install: /usr/bin/install -c .libs/libfdcore.lai /opt/nextepc/install/lib/nextepc/libfdcore.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/libfdcore'
+make[4]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/libfdcore'
+make[3]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/libfdcore'
+Making install in extensions
+make[3]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions'
+Making install in dbg_msg_dumps
+make[4]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dbg_msg_dumps'
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dbg_msg_dumps'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc/freeDiameter'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   dbg_msg_dumps.la '/opt/nextepc/install/lib/nextepc/freeDiameter'
+libtool: install: (cd /opt/nextepc/lib/freeDiameter-1.2.1/extensions/dbg_msg_dumps; /bin/bash "/opt/nextepc/lib/freeDiameter-1.2.1/libtool"  --silent --tag CC --mode=relink gcc -Wall -Werror -g -O2 -module -avoid-version -shared -o dbg_msg_dumps.la -rpath /opt/nextepc/install/lib/nextepc/freeDiameter dbg_msg_dumps.lo ../../libfdcore/libfdcore.la ../../libfdproto/libfdproto.la -lidn -lgcrypt -lgnutls -lsctp -lpthread -ldl )
+libtool: install: /usr/bin/install -c .libs/dbg_msg_dumps.soT /opt/nextepc/install/lib/nextepc/freeDiameter/dbg_msg_dumps.so
+libtool: install: /usr/bin/install -c .libs/dbg_msg_dumps.lai /opt/nextepc/install/lib/nextepc/freeDiameter/dbg_msg_dumps.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc/freeDiameter
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc/freeDiameter
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dbg_msg_dumps'
+make[4]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dbg_msg_dumps'
+Making install in dict_rfc5777
+make[4]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_rfc5777'
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_rfc5777'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc/freeDiameter'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   dict_rfc5777.la '/opt/nextepc/install/lib/nextepc/freeDiameter'
+libtool: install: (cd /opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_rfc5777; /bin/bash "/opt/nextepc/lib/freeDiameter-1.2.1/libtool"  --silent --tag CC --mode=relink gcc -Wall -Werror -g -O2 -module -avoid-version -shared -o dict_rfc5777.la -rpath /opt/nextepc/install/lib/nextepc/freeDiameter dict_rfc5777.lo ../../libfdcore/libfdcore.la ../../libfdproto/libfdproto.la -lidn -lgcrypt -lgnutls -lsctp -lpthread -ldl )
+libtool: install: /usr/bin/install -c .libs/dict_rfc5777.soT /opt/nextepc/install/lib/nextepc/freeDiameter/dict_rfc5777.so
+libtool: install: /usr/bin/install -c .libs/dict_rfc5777.lai /opt/nextepc/install/lib/nextepc/freeDiameter/dict_rfc5777.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc/freeDiameter
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc/freeDiameter
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_rfc5777'
+make[4]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_rfc5777'
+Making install in dict_mip6i
+make[4]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_mip6i'
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_mip6i'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc/freeDiameter'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   dict_mip6i.la '/opt/nextepc/install/lib/nextepc/freeDiameter'
+libtool: install: (cd /opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_mip6i; /bin/bash "/opt/nextepc/lib/freeDiameter-1.2.1/libtool"  --silent --tag CC --mode=relink gcc -Wall -Werror -g -O2 -module -avoid-version -shared -o dict_mip6i.la -rpath /opt/nextepc/install/lib/nextepc/freeDiameter dict_mip6i.lo ../../libfdcore/libfdcore.la ../../libfdproto/libfdproto.la -lidn -lgcrypt -lgnutls -lsctp -lpthread -ldl )
+libtool: install: /usr/bin/install -c .libs/dict_mip6i.soT /opt/nextepc/install/lib/nextepc/freeDiameter/dict_mip6i.so
+libtool: install: /usr/bin/install -c .libs/dict_mip6i.lai /opt/nextepc/install/lib/nextepc/freeDiameter/dict_mip6i.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc/freeDiameter
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc/freeDiameter
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_mip6i'
+make[4]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_mip6i'
+Making install in dict_nasreq
+make[4]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_nasreq'
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_nasreq'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc/freeDiameter'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   dict_nasreq.la '/opt/nextepc/install/lib/nextepc/freeDiameter'
+libtool: install: (cd /opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_nasreq; /bin/bash "/opt/nextepc/lib/freeDiameter-1.2.1/libtool"  --silent --tag CC --mode=relink gcc -Wall -Werror -g -O2 -module -avoid-version -shared -o dict_nasreq.la -rpath /opt/nextepc/install/lib/nextepc/freeDiameter dict_nasreq.lo ../../libfdcore/libfdcore.la ../../libfdproto/libfdproto.la -lidn -lgcrypt -lgnutls -lsctp -lpthread -ldl )
+libtool: install: /usr/bin/install -c .libs/dict_nasreq.soT /opt/nextepc/install/lib/nextepc/freeDiameter/dict_nasreq.so
+libtool: install: /usr/bin/install -c .libs/dict_nasreq.lai /opt/nextepc/install/lib/nextepc/freeDiameter/dict_nasreq.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc/freeDiameter
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc/freeDiameter
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_nasreq'
+make[4]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_nasreq'
+Making install in dict_nas_mipv6
+make[4]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_nas_mipv6'
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_nas_mipv6'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc/freeDiameter'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   dict_nas_mipv6.la '/opt/nextepc/install/lib/nextepc/freeDiameter'
+libtool: install: (cd /opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_nas_mipv6; /bin/bash "/opt/nextepc/lib/freeDiameter-1.2.1/libtool"  --silent --tag CC --mode=relink gcc -Wall -Werror -g -O2 -module -avoid-version -shared -o dict_nas_mipv6.la -rpath /opt/nextepc/install/lib/nextepc/freeDiameter dict_nas_mipv6.lo ../../libfdcore/libfdcore.la ../../libfdproto/libfdproto.la -lidn -lgcrypt -lgnutls -lsctp -lpthread -ldl )
+libtool: install: /usr/bin/install -c .libs/dict_nas_mipv6.soT /opt/nextepc/install/lib/nextepc/freeDiameter/dict_nas_mipv6.so
+libtool: install: /usr/bin/install -c .libs/dict_nas_mipv6.lai /opt/nextepc/install/lib/nextepc/freeDiameter/dict_nas_mipv6.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc/freeDiameter
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc/freeDiameter
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_nas_mipv6'
+make[4]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_nas_mipv6'
+Making install in dict_dcca
+make[4]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_dcca'
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_dcca'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc/freeDiameter'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   dict_dcca.la '/opt/nextepc/install/lib/nextepc/freeDiameter'
+libtool: install: (cd /opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_dcca; /bin/bash "/opt/nextepc/lib/freeDiameter-1.2.1/libtool"  --silent --tag CC --mode=relink gcc -Wall -Werror -g -O2 -module -avoid-version -shared -o dict_dcca.la -rpath /opt/nextepc/install/lib/nextepc/freeDiameter dict_dcca.lo ../../libfdcore/libfdcore.la ../../libfdproto/libfdproto.la -lidn -lgcrypt -lgnutls -lsctp -lpthread -ldl )
+libtool: install: /usr/bin/install -c .libs/dict_dcca.soT /opt/nextepc/install/lib/nextepc/freeDiameter/dict_dcca.so
+libtool: install: /usr/bin/install -c .libs/dict_dcca.lai /opt/nextepc/install/lib/nextepc/freeDiameter/dict_dcca.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc/freeDiameter
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc/freeDiameter
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_dcca'
+make[4]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_dcca'
+Making install in dict_dcca_3gpp
+make[4]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_dcca_3gpp'
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_dcca_3gpp'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc/freeDiameter'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   dict_dcca_3gpp.la '/opt/nextepc/install/lib/nextepc/freeDiameter'
+libtool: install: (cd /opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_dcca_3gpp; /bin/bash "/opt/nextepc/lib/freeDiameter-1.2.1/libtool"  --silent --tag CC --mode=relink gcc -Wall -Werror -g -O2 -module -avoid-version -shared -o dict_dcca_3gpp.la -rpath /opt/nextepc/install/lib/nextepc/freeDiameter dict_dcca_3gpp.lo ../../libfdcore/libfdcore.la ../../libfdproto/libfdproto.la -lidn -lgcrypt -lgnutls -lsctp -lpthread -ldl )
+libtool: install: /usr/bin/install -c .libs/dict_dcca_3gpp.soT /opt/nextepc/install/lib/nextepc/freeDiameter/dict_dcca_3gpp.so
+libtool: install: /usr/bin/install -c .libs/dict_dcca_3gpp.lai /opt/nextepc/install/lib/nextepc/freeDiameter/dict_dcca_3gpp.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc/freeDiameter
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc/freeDiameter
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_dcca_3gpp'
+make[4]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_dcca_3gpp'
+Making install in dict_s6a
+make[4]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_s6a'
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_s6a'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc/freeDiameter'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   dict_s6a.la '/opt/nextepc/install/lib/nextepc/freeDiameter'
+libtool: install: (cd /opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_s6a; /bin/bash "/opt/nextepc/lib/freeDiameter-1.2.1/libtool"  --silent --tag CC --mode=relink gcc -Wall -Werror -g -O2 -module -avoid-version -shared -o dict_s6a.la -rpath /opt/nextepc/install/lib/nextepc/freeDiameter dict_s6a.lo ../../libfdcore/libfdcore.la ../../libfdproto/libfdproto.la -lidn -lgcrypt -lgnutls -lsctp -lpthread -ldl )
+libtool: install: /usr/bin/install -c .libs/dict_s6a.soT /opt/nextepc/install/lib/nextepc/freeDiameter/dict_s6a.so
+libtool: install: /usr/bin/install -c .libs/dict_s6a.lai /opt/nextepc/install/lib/nextepc/freeDiameter/dict_s6a.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc/freeDiameter
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc/freeDiameter
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_s6a'
+make[4]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions/dict_s6a'
+make[4]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions'
+make[5]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions'
+make[4]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions'
+make[3]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1/extensions'
+make[3]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1'
+make[4]: Entering directory '/opt/nextepc/lib/freeDiameter-1.2.1'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1'
+make[3]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1'
+make[2]: Leaving directory '/opt/nextepc/lib/freeDiameter-1.2.1'
+Making install in ipfw
+make[2]: Entering directory '/opt/nextepc/lib/ipfw'
+make[3]: Entering directory '/opt/nextepc/lib/ipfw'
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libipfw.la '/opt/nextepc/install/lib/nextepc'
+libtool: install: /usr/bin/install -c .libs/libipfw.so.1.0.0 /opt/nextepc/install/lib/nextepc/libipfw.so.1.0.0
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libipfw.so.1.0.0 libipfw.so.1 || { rm -f libipfw.so.1 && ln -s libipfw.so.1.0.0 libipfw.so.1; }; })
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libipfw.so.1.0.0 libipfw.so || { rm -f libipfw.so && ln -s libipfw.so.1.0.0 libipfw.so; }; })
+libtool: install: /usr/bin/install -c .libs/libipfw.lai /opt/nextepc/install/lib/nextepc/libipfw.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/nextepc/lib/ipfw'
+make[2]: Leaving directory '/opt/nextepc/lib/ipfw'
+Making install in core
+make[2]: Entering directory '/opt/nextepc/lib/core'
+Making install in src
+make[3]: Entering directory '/opt/nextepc/lib/core/src'
+make[4]: Entering directory '/opt/nextepc/lib/core/src'
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc'
+ /bin/bash ../../../libtool   --mode=install /usr/bin/install -c   libcore.la '/opt/nextepc/install/lib/nextepc'
+libtool: install: /usr/bin/install -c .libs/libcore.so.1.0.0 /opt/nextepc/install/lib/nextepc/libcore.so.1.0.0
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libcore.so.1.0.0 libcore.so.1 || { rm -f libcore.so.1 && ln -s libcore.so.1.0.0 libcore.so.1; }; })
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libcore.so.1.0.0 libcore.so || { rm -f libcore.so && ln -s libcore.so.1.0.0 libcore.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcore.lai /opt/nextepc/install/lib/nextepc/libcore.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/opt/nextepc/lib/core/src'
+make[3]: Leaving directory '/opt/nextepc/lib/core/src'
+Making install in test
+make[3]: Entering directory '/opt/nextepc/lib/core/test'
+make[4]: Entering directory '/opt/nextepc/lib/core/test'
+ /bin/mkdir -p '/opt/nextepc/install/bin'
+  /bin/bash ../../../libtool   --mode=install /usr/bin/install -c testcore '/opt/nextepc/install/bin'
+libtool: install: /usr/bin/install -c .libs/testcore /opt/nextepc/install/bin/testcore
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/opt/nextepc/lib/core/test'
+make[3]: Leaving directory '/opt/nextepc/lib/core/test'
+make[3]: Entering directory '/opt/nextepc/lib/core'
+make[4]: Entering directory '/opt/nextepc/lib/core'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/opt/nextepc/lib/core'
+make[3]: Leaving directory '/opt/nextepc/lib/core'
+make[2]: Leaving directory '/opt/nextepc/lib/core'
+Making install in s1ap
+make[2]: Entering directory '/opt/nextepc/lib/s1ap'
+Making install in asn1c
+make[3]: Entering directory '/opt/nextepc/lib/s1ap/asn1c'
+make[4]: Entering directory '/opt/nextepc/lib/s1ap/asn1c'
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc'
+ /bin/bash ../../../libtool   --mode=install /usr/bin/install -c   libs1apasn1c.la '/opt/nextepc/install/lib/nextepc'
+libtool: install: (cd /opt/nextepc/lib/s1ap/asn1c; /bin/bash "/opt/nextepc/libtool"  --silent --tag CC --mode=relink gcc -Wno-parentheses-equality -Wno-overflow -Wno-format -g -O2 -Wno-unused-result -version-info 1:0:0 -o libs1apasn1c.la -rpath /opt/nextepc/install/lib/nextepc S1AP_S1AP-PDU.lo S1AP_InitiatingMessage.lo S1AP_SuccessfulOutcome.lo S1AP_UnsuccessfulOutcome.lo S1AP_E-RAB-IE-ContainerList.lo S1AP_HandoverRequired.lo S1AP_HandoverCommand.lo S1AP_E-RABSubjecttoDataForwardingList.lo S1AP_E-RABDataForwardingItem.lo S1AP_HandoverPreparationFailure.lo S1AP_HandoverRequest.lo S1AP_E-RABToBeSetupListHOReq.lo S1AP_E-RABToBeSetupItemHOReq.lo S1AP_HandoverRequestAcknowledge.lo S1AP_E-RABAdmittedList.lo S1AP_E-RABAdmittedItem.lo S1AP_E-RABFailedtoSetupListHOReqAck.lo S1AP_E-RABFailedToSetupItemHOReqAck.lo S1AP_HandoverFailure.lo S1AP_HandoverNotify.lo S1AP_PathSwitchRequest.lo S1AP_E-RABToBeSwitchedDLList.lo S1AP_E-RABToBeSwitchedDLItem.lo S1AP_PathSwitchRequestAcknowledge.lo S1AP_E-RABToBeSwitchedULList.lo S1AP_E-RABToBeSwitchedULItem.lo S1AP_PathSwitchRequestFailure.lo S1AP_HandoverCancel.lo S1AP_HandoverCancelAcknowledge.lo S1AP_E-RABSetupRequest.lo S1AP_E-RABToBeSetupListBearerSUReq.lo S1AP_E-RABToBeSetupItemBearerSUReq.lo S1AP_E-RABSetupResponse.lo S1AP_E-RABSetupListBearerSURes.lo S1AP_E-RABSetupItemBearerSURes.lo S1AP_E-RABModifyRequest.lo S1AP_E-RABToBeModifiedListBearerModReq.lo S1AP_E-RABToBeModifiedItemBearerModReq.lo S1AP_E-RABModifyResponse.lo S1AP_E-RABModifyListBearerModRes.lo S1AP_E-RABModifyItemBearerModRes.lo S1AP_E-RABReleaseCommand.lo S1AP_E-RABReleaseResponse.lo S1AP_E-RABReleaseListBearerRelComp.lo S1AP_E-RABReleaseItemBearerRelComp.lo S1AP_E-RABReleaseIndication.lo S1AP_InitialContextSetupRequest.lo S1AP_E-RABToBeSetupListCtxtSUReq.lo S1AP_E-RABToBeSetupItemCtxtSUReq.lo S1AP_InitialContextSetupResponse.lo S1AP_E-RABSetupListCtxtSURes.lo S1AP_E-RABSetupItemCtxtSURes.lo S1AP_InitialContextSetupFailure.lo S1AP_Paging.lo S1AP_TAIList.lo S1AP_TAIItem.lo S1AP_UEContextReleaseRequest.lo S1AP_UEContextReleaseCommand.lo S1AP_UEContextReleaseComplete.lo S1AP_UEContextModificationRequest.lo S1AP_UEContextModificationResponse.lo S1AP_UEContextModificationFailure.lo S1AP_UERadioCapabilityMatchRequest.lo S1AP_UERadioCapabilityMatchResponse.lo S1AP_DownlinkNASTransport.lo S1AP_InitialUEMessage.lo S1AP_UplinkNASTransport.lo S1AP_NASNonDeliveryIndication.lo S1AP_RerouteNASRequest.lo S1AP_NASDeliveryIndication.lo S1AP_Reset.lo S1AP_ResetType.lo S1AP_ResetAll.lo S1AP_UE-associatedLogicalS1-ConnectionListRes.lo S1AP_ResetAcknowledge.lo S1AP_UE-associatedLogicalS1-ConnectionListResAck.lo S1AP_ErrorIndication.lo S1AP_S1SetupRequest.lo S1AP_S1SetupResponse.lo S1AP_S1SetupFailure.lo S1AP_ENBConfigurationUpdate.lo S1AP_ENBConfigurationUpdateAcknowledge.lo S1AP_ENBConfigurationUpdateFailure.lo S1AP_MMEConfigurationUpdate.lo S1AP_MMEConfigurationUpdateAcknowledge.lo S1AP_MMEConfigurationUpdateFailure.lo S1AP_DownlinkS1cdma2000tunnelling.lo S1AP_UplinkS1cdma2000tunnelling.lo S1AP_UECapabilityInfoIndication.lo S1AP_ENBStatusTransfer.lo S1AP_MMEStatusTransfer.lo S1AP_TraceStart.lo S1AP_TraceFailureIndication.lo S1AP_DeactivateTrace.lo S1AP_CellTrafficTrace.lo S1AP_LocationReportingControl.lo S1AP_LocationReportingFailureIndication.lo S1AP_LocationReport.lo S1AP_OverloadStart.lo S1AP_OverloadStop.lo S1AP_WriteReplaceWarningRequest.lo S1AP_WriteReplaceWarningResponse.lo S1AP_ENBDirectInformationTransfer.lo S1AP_Inter-SystemInformationTransferType.lo S1AP_MMEDirectInformationTransfer.lo S1AP_ENBConfigurationTransfer.lo S1AP_MMEConfigurationTransfer.lo S1AP_PrivateMessage.lo S1AP_KillRequest.lo S1AP_KillResponse.lo S1AP_PWSRestartIndication.lo S1AP_PWSFailureIndication.lo S1AP_DownlinkUEAssociatedLPPaTransport.lo S1AP_UplinkUEAssociatedLPPaTransport.lo S1AP_DownlinkNonUEAssociatedLPPaTransport.lo S1AP_UplinkNonUEAssociatedLPPaTransport.lo S1AP_E-RABModificationIndication.lo S1AP_E-RABToBeModifiedListBearerModInd.lo S1AP_E-RABToBeModifiedItemBearerModInd.lo S1AP_E-RABNotToBeModifiedListBearerModInd.lo S1AP_E-RABNotToBeModifiedItemBearerModInd.lo S1AP_CSGMembershipInfo.lo S1AP_E-RABModificationConfirm.lo S1AP_E-RABModifyListBearerModConf.lo S1AP_E-RABModifyItemBearerModConf.lo S1AP_UEContextModificationIndication.lo S1AP_UEContextModificationConfirm.lo S1AP_UEContextSuspendRequest.lo S1AP_UEContextSuspendResponse.lo S1AP_UEContextResumeRequest.lo S1AP_E-RABFailedToResumeListResumeReq.lo S1AP_E-RABFailedToResumeItemResumeReq.lo S1AP_UEContextResumeResponse.lo S1AP_E-RABFailedToResumeListResumeRes.lo S1AP_E-RABFailedToResumeItemResumeRes.lo S1AP_UEContextResumeFailure.lo S1AP_ConnectionEstablishmentIndication.lo S1AP_RetrieveUEInformation.lo S1AP_UEInformationTransfer.lo S1AP_ENBCPRelocationIndication.lo S1AP_MMECPRelocationIndication.lo S1AP_Additional-GUTI.lo S1AP_AreaScopeOfMDT.lo S1AP_AllocationAndRetentionPriority.lo S1AP_AssistanceDataForCECapableUEs.lo S1AP_AssistanceDataForPaging.lo S1AP_AssistanceDataForRecommendedCells.lo S1AP_Bearers-SubjectToStatusTransferList.lo S1AP_Bearers-SubjectToStatusTransfer-Item.lo S1AP_BearerType.lo S1AP_BitRate.lo S1AP_BPLMNs.lo S1AP_BroadcastCancelledAreaList.lo S1AP_BroadcastCompletedAreaList.lo S1AP_CancelledCellinEAI.lo S1AP_CancelledCellinEAI-Item.lo S1AP_CancelledCellinTAI.lo S1AP_CancelledCellinTAI-Item.lo S1AP_Cause.lo S1AP_CauseMisc.lo S1AP_CauseProtocol.lo S1AP_CauseRadioNetwork.lo S1AP_CauseTransport.lo S1AP_CauseNas.lo S1AP_CellAccessMode.lo S1AP_CellIdentifierAndCELevelForCECapableUEs.lo S1AP_CELevel.lo S1AP_CE-mode-B-SupportIndicator.lo S1AP_CellIdentity.lo S1AP_CellID-Broadcast.lo S1AP_CellID-Broadcast-Item.lo S1AP_CellID-Cancelled.lo S1AP_CellID-Cancelled-Item.lo S1AP_CellBasedMDT.lo S1AP_CellIdListforMDT.lo S1AP_Cdma2000PDU.lo S1AP_Cdma2000RATType.lo S1AP_Cdma2000SectorID.lo S1AP_Cdma2000HOStatus.lo S1AP_Cdma2000HORequiredIndication.lo S1AP_Cdma2000OneXSRVCCInfo.lo S1AP_Cdma2000OneXMEID.lo S1AP_Cdma2000OneXMSI.lo S1AP_Cdma2000OneXPilot.lo S1AP_Cdma2000OneXRAND.lo S1AP_Cell-Size.lo S1AP_CellType.lo S1AP_CGI.lo S1AP_CI.lo S1AP_CNDomain.lo S1AP_ConcurrentWarningMessageIndicator.lo S1AP_Correlation-ID.lo S1AP_CSFallbackIndicator.lo S1AP_AdditionalCSFallbackIndicator.lo S1AP_CSG-Id.lo S1AP_CSG-IdList.lo S1AP_CSG-IdList-Item.lo S1AP_CSGMembershipStatus.lo S1AP_COUNTvalue.lo S1AP_COUNTValueExtended.lo S1AP_COUNTvaluePDCP-SNlength18.lo S1AP_Coverage-Level.lo S1AP_CriticalityDiagnostics.lo S1AP_CriticalityDiagnostics-IE-List.lo S1AP_CriticalityDiagnostics-IE-Item.lo S1AP_DataCodingScheme.lo S1AP_DCN-ID.lo S1AP_ServedDCNs.lo S1AP_ServedDCNsItem.lo S1AP_DL-CP-SecurityInformation.lo S1AP_DL-Forwarding.lo S1AP_DL-NAS-MAC.lo S1AP_Direct-Forwarding-Path-Availability.lo S1AP_Data-Forwarding-Not-Possible.lo S1AP_DLNASPDUDeliveryAckRequest.lo S1AP_EARFCN.lo S1AP_ECGIList.lo S1AP_PWSfailedECGIList.lo S1AP_EmergencyAreaIDList.lo S1AP_EmergencyAreaID.lo S1AP_EmergencyAreaID-Broadcast.lo S1AP_EmergencyAreaID-Broadcast-Item.lo S1AP_EmergencyAreaID-Cancelled.lo S1AP_EmergencyAreaID-Cancelled-Item.lo S1AP_CompletedCellinEAI.lo S1AP_CompletedCellinEAI-Item.lo S1AP_ECGI-List.lo S1AP_EmergencyAreaIDListForRestart.lo S1AP_ENB-ID.lo S1AP_GERAN-Cell-ID.lo S1AP_Global-ENB-ID.lo S1AP_GUMMEIList.lo S1AP_ENB-StatusTransfer-TransparentContainer.lo S1AP_ENB-UE-S1AP-ID.lo S1AP_ENBname.lo S1AP_ENBX2TLAs.lo S1AP_EncryptionAlgorithms.lo S1AP_EnhancedCoverageRestricted.lo S1AP_EPLMNs.lo S1AP_EventType.lo S1AP_E-RAB-ID.lo S1AP_E-RABInformationList.lo S1AP_E-RABInformationListItem.lo S1AP_E-RABList.lo S1AP_E-RABItem.lo S1AP_E-RABLevelQoSParameters.lo S1AP_EUTRAN-CGI.lo S1AP_EUTRANRoundTripDelayEstimationInfo.lo S1AP_ExpectedUEBehaviour.lo S1AP_ExpectedUEActivityBehaviour.lo S1AP_ExpectedActivityPeriod.lo S1AP_ExpectedIdlePeriod.lo S1AP_SourceOfUEActivityBehaviourInformation.lo S1AP_ExpectedHOInterval.lo S1AP_ExtendedRNC-ID.lo S1AP_ExtendedRepetitionPeriod.lo S1AP_Extended-UEIdentityIndexValue.lo S1AP_ForbiddenInterRATs.lo S1AP_ForbiddenTAs.lo S1AP_ForbiddenTAs-Item.lo S1AP_ForbiddenTACs.lo S1AP_ForbiddenLAs.lo S1AP_ForbiddenLAs-Item.lo S1AP_ForbiddenLACs.lo S1AP_GBR-QosInformation.lo S1AP_GTP-TEID.lo S1AP_GUMMEI.lo S1AP_GUMMEIType.lo S1AP_GWContextReleaseIndication.lo S1AP_HandoverRestrictionList.lo S1AP_HandoverType.lo S1AP_HFN.lo S1AP_HFNModified.lo S1AP_HFNforPDCP-SNlength18.lo S1AP_Masked-IMEISV.lo S1AP_ImmediateMDT.lo S1AP_IMSI.lo S1AP_InformationOnRecommendedCellsAndENBsForPaging.lo S1AP_IntegrityProtectionAlgorithms.lo S1AP_IntendedNumberOfPagingAttempts.lo S1AP_InterfacesToTrace.lo S1AP_KillAllWarningMessages.lo S1AP_LAC.lo S1AP_LAI.lo S1AP_LastVisitedCell-Item.lo S1AP_LastVisitedEUTRANCellInformation.lo S1AP_LastVisitedUTRANCellInformation.lo S1AP_LastVisitedGERANCellInformation.lo S1AP_L3-Information.lo S1AP_LPPa-PDU.lo S1AP_LHN-ID.lo S1AP_Links-to-log.lo S1AP_ListeningSubframePattern.lo S1AP_LoggedMDT.lo S1AP_LoggingInterval.lo S1AP_LoggingDuration.lo S1AP_LoggedMBSFNMDT.lo S1AP_M3Configuration.lo S1AP_M3period.lo S1AP_M4Configuration.lo S1AP_M4period.lo S1AP_M5Configuration.lo S1AP_M5period.lo S1AP_M6Configuration.lo S1AP_M6report-Interval.lo S1AP_M6delay-threshold.lo S1AP_M7Configuration.lo S1AP_M7period.lo S1AP_MDT-Activation.lo S1AP_MDT-Location-Info.lo S1AP_MDT-Configuration.lo S1AP_ManagementBasedMDTAllowed.lo S1AP_MBSFN-ResultToLog.lo S1AP_MBSFN-ResultToLogInfo.lo S1AP_MDTPLMNList.lo S1AP_PrivacyIndicator.lo S1AP_MDTMode.lo S1AP_MDTMode-Extension.lo S1AP_MeasurementsToActivate.lo S1AP_MeasurementThresholdA2.lo S1AP_MessageIdentifier.lo S1AP_MobilityInformation.lo S1AP_MMEname.lo S1AP_MMEPagingTarget.lo S1AP_MMERelaySupportIndicator.lo S1AP_MME-Group-ID.lo S1AP_MME-Code.lo S1AP_MME-UE-S1AP-ID.lo S1AP_M-TMSI.lo S1AP_MSClassmark2.lo S1AP_MSClassmark3.lo S1AP_MutingAvailabilityIndication.lo S1AP_MutingPatternInformation.lo S1AP_NAS-PDU.lo S1AP_NASSecurityParametersfromE-UTRAN.lo S1AP_NASSecurityParameterstoE-UTRAN.lo S1AP_NB-IoT-DefaultPagingDRX.lo S1AP_NB-IoT-Paging-eDRXInformation.lo S1AP_NB-IoT-Paging-eDRX-Cycle.lo S1AP_NB-IoT-PagingTimeWindow.lo S1AP_NB-IoT-UEIdentityIndexValue.lo S1AP_NextPagingAreaScope.lo S1AP_NumberofBroadcastRequest.lo S1AP_NumberOfBroadcasts.lo S1AP_OldBSS-ToNewBSS-Information.lo S1AP_OverloadAction.lo S1AP_OverloadResponse.lo S1AP_PagingAttemptInformation.lo S1AP_PagingAttemptCount.lo S1AP_Paging-eDRXInformation.lo S1AP_Paging-eDRX-Cycle.lo S1AP_PagingTimeWindow.lo S1AP_PagingDRX.lo S1AP_PagingPriority.lo S1AP_PDCP-SN.lo S1AP_PDCP-SNExtended.lo S1AP_PDCP-SNlength18.lo S1AP_M1PeriodicReporting.lo S1AP_PLMNidentity.lo S1AP_Port-Number.lo S1AP_Pre-emptionCapability.lo S1AP_Pre-emptionVulnerability.lo S1AP_PriorityLevel.lo S1AP_ProSeAuthorized.lo S1AP_ProSeDirectDiscovery.lo S1AP_ProSeUEtoNetworkRelaying.lo S1AP_ProSeDirectCommunication.lo S1AP_PS-ServiceNotAvailable.lo S1AP_QCI.lo S1AP_ReceiveStatusofULPDCPSDUs.lo S1AP_ReceiveStatusOfULPDCPSDUsExtended.lo S1AP_ReceiveStatusOfULPDCPSDUsPDCP-SNlength18.lo S1AP_RecommendedCellsForPaging.lo S1AP_RecommendedCellList.lo S1AP_RecommendedCellItem.lo S1AP_RecommendedENBsForPaging.lo S1AP_RecommendedENBList.lo S1AP_RecommendedENBItem.lo S1AP_RelativeMMECapacity.lo S1AP_RelayNode-Indicator.lo S1AP_RAC.lo S1AP_RAT-Type.lo S1AP_ReportAmountMDT.lo S1AP_ReportIntervalMDT.lo S1AP_M1ReportingTrigger.lo S1AP_RequestType.lo S1AP_RIMTransfer.lo S1AP_RIMInformation.lo S1AP_RIMRoutingAddress.lo S1AP_ReportArea.lo S1AP_RepetitionPeriod.lo S1AP_RLFReportInformation.lo S1AP_RNC-ID.lo S1AP_RRC-Container.lo S1AP_RRC-Establishment-Cause.lo S1AP_ECGIListForRestart.lo S1AP_Routing-ID.lo S1AP_SecurityKey.lo S1AP_SecurityContext.lo S1AP_SerialNumber.lo S1AP_SONInformation.lo S1AP_SONInformation-Extension.lo S1AP_SONInformationRequest.lo S1AP_SONInformationReply.lo S1AP_SONInformationReport.lo S1AP_SONConfigurationTransfer.lo S1AP_SynchronisationInformation.lo S1AP_Source-ToTarget-TransparentContainer.lo S1AP_SourceBSS-ToTargetBSS-TransparentContainer.lo S1AP_SourceeNB-ID.lo S1AP_SRVCCOperationNotPossible.lo S1AP_SRVCCOperationPossible.lo S1AP_SRVCCHOIndication.lo S1AP_SourceeNB-ToTargeteNB-TransparentContainer.lo S1AP_SourceRNC-ToTargetRNC-TransparentContainer.lo S1AP_ServedGUMMEIs.lo S1AP_ServedGUMMEIsItem.lo S1AP_ServedGroupIDs.lo S1AP_ServedMMECs.lo S1AP_ServedPLMNs.lo S1AP_SubscriberProfileIDforRFP.lo S1AP_SupportedTAs.lo S1AP_SupportedTAs-Item.lo S1AP_StratumLevel.lo S1AP_SynchronisationStatus.lo S1AP_TimeSynchronisationInfo.lo S1AP_S-TMSI.lo S1AP_TAC.lo S1AP_TAIBasedMDT.lo S1AP_TAIListforMDT.lo S1AP_TAIListforWarning.lo S1AP_TAI.lo S1AP_TAI-Broadcast.lo S1AP_TAI-Broadcast-Item.lo S1AP_TAI-Cancelled.lo S1AP_TAI-Cancelled-Item.lo S1AP_TABasedMDT.lo S1AP_TAListforMDT.lo S1AP_CompletedCellinTAI.lo S1AP_CompletedCellinTAI-Item.lo S1AP_TBCD-STRING.lo S1AP_TargetID.lo S1AP_TargeteNB-ID.lo S1AP_TargetRNC-ID.lo S1AP_TargeteNB-ToSourceeNB-TransparentContainer.lo S1AP_Target-ToSource-TransparentContainer.lo S1AP_TargetRNC-ToSourceRNC-TransparentContainer.lo S1AP_TargetBSS-ToSourceBSS-TransparentContainer.lo S1AP_M1ThresholdEventA2.lo S1AP_Threshold-RSRP.lo S1AP_Threshold-RSRQ.lo S1AP_TimeToWait.lo S1AP_Time-UE-StayedInCell.lo S1AP_Time-UE-StayedInCell-EnhancedGranularity.lo S1AP_TransportInformation.lo S1AP_TransportLayerAddress.lo S1AP_TraceActivation.lo S1AP_TraceDepth.lo S1AP_E-UTRAN-Trace-ID.lo S1AP_TrafficLoadReductionIndication.lo S1AP_TunnelInformation.lo S1AP_TypeOfError.lo S1AP_TAIListForRestart.lo S1AP_UEAggregateMaximumBitrate.lo S1AP_UE-RetentionInformation.lo S1AP_UE-S1AP-IDs.lo S1AP_UE-S1AP-ID-pair.lo S1AP_UE-associatedLogicalS1-ConnectionItem.lo S1AP_UEIdentityIndexValue.lo S1AP_UE-HistoryInformation.lo S1AP_UE-HistoryInformationFromTheUE.lo S1AP_UEPagingID.lo S1AP_UERadioCapability.lo S1AP_UERadioCapabilityForPaging.lo S1AP_UE-RLF-Report-Container.lo S1AP_UE-RLF-Report-Container-for-extended-bands.lo S1AP_UESecurityCapabilities.lo S1AP_UESidelinkAggregateMaximumBitrate.lo S1AP_UE-Usage-Type.lo S1AP_UL-CP-SecurityInformation.lo S1AP_UL-NAS-MAC.lo S1AP_UL-NAS-Count.lo S1AP_UserLocationInformation.lo S1AP_UEUserPlaneCIoTSupportIndicator.lo S1AP_VoiceSupportMatchIndicator.lo S1AP_V2XServicesAuthorized.lo S1AP_VehicleUE.lo S1AP_PedestrianUE.lo S1AP_WarningAreaList.lo S1AP_WarningType.lo S1AP_WarningSecurityInfo.lo S1AP_WarningMessageContents.lo S1AP_X2TNLConfigurationInfo.lo S1AP_ENBX2ExtTLAs.lo S1AP_ENBX2ExtTLA.lo S1AP_ENBX2GTPTLAs.lo S1AP_ENBIndirectX2TransportLayerAddresses.lo S1AP_Criticality.lo S1AP_Presence.lo S1AP_PrivateIE-ID.lo S1AP_ProcedureCode.lo S1AP_ProtocolExtensionID.lo S1AP_ProtocolIE-ID.lo S1AP_TriggeringMessage.lo S1AP_ProtocolIE-Container.lo S1AP_ProtocolIE-SingleContainer.lo S1AP_ProtocolIE-Field.lo S1AP_ProtocolIE-ContainerList.lo S1AP_ProtocolExtensionContainer.lo S1AP_ProtocolExtensionField.lo S1AP_PrivateIE-Container.lo S1AP_PrivateIE-Field.lo ANY.lo OPEN_TYPE.lo BOOLEAN.lo INTEGER.lo NULL.lo NativeEnumerated.lo NativeInteger.lo OBJECT_IDENTIFIER.lo PrintableString.lo asn_SEQUENCE_OF.lo asn_SET_OF.lo constr_CHOICE.lo constr_SEQUENCE.lo constr_SEQUENCE_OF.lo constr_SET_OF.lo asn_application.lo asn_internal.lo asn_random_fill.lo asn_bit_data.lo OCTET_STRING.lo BIT_STRING.lo asn_codecs_prim.lo ber_tlv_length.lo ber_tlv_tag.lo ber_decoder.lo der_encoder.lo constr_TYPE.lo constraints.lo xer_support.lo xer_decoder.lo xer_encoder.lo per_support.lo per_decoder.lo per_encoder.lo per_opentype.lo oer_decoder.lo oer_encoder.lo oer_support.lo OPEN_TYPE_oer.lo INTEGER_oer.lo BIT_STRING_oer.lo OCTET_STRING_oer.lo NativeInteger_oer.lo NativeEnumerated_oer.lo constr_CHOICE_oer.lo constr_SEQUENCE_oer.lo constr_SET_OF_oer.lo ../../../lib/core/src/libcore.la -lsctp -lgnutls -lpthread )
+libtool: install: /usr/bin/install -c .libs/libs1apasn1c.so.1.0.0T /opt/nextepc/install/lib/nextepc/libs1apasn1c.so.1.0.0
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libs1apasn1c.so.1.0.0 libs1apasn1c.so.1 || { rm -f libs1apasn1c.so.1 && ln -s libs1apasn1c.so.1.0.0 libs1apasn1c.so.1; }; })
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libs1apasn1c.so.1.0.0 libs1apasn1c.so || { rm -f libs1apasn1c.so && ln -s libs1apasn1c.so.1.0.0 libs1apasn1c.so; }; })
+libtool: install: /usr/bin/install -c .libs/libs1apasn1c.lai /opt/nextepc/install/lib/nextepc/libs1apasn1c.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/opt/nextepc/lib/s1ap/asn1c'
+make[3]: Leaving directory '/opt/nextepc/lib/s1ap/asn1c'
+make[3]: Entering directory '/opt/nextepc/lib/s1ap'
+make[4]: Entering directory '/opt/nextepc/lib/s1ap'
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libs1ap.la '/opt/nextepc/install/lib/nextepc'
+libtool: install: (cd /opt/nextepc/lib/s1ap; /bin/bash "/opt/nextepc/libtool"  --silent --tag CC --mode=relink gcc -Wall -Werror -g -O2 -Wno-unused-result -version-info 1:0:0 -o libs1ap.la -rpath /opt/nextepc/install/lib/nextepc s1ap_decoder.lo s1ap_encoder.lo s1ap_free.lo ../../lib/core/src/libcore.la ../../lib/s1ap/asn1c/libs1apasn1c.la -lsctp -lgnutls -lpthread )
+libtool: install: /usr/bin/install -c .libs/libs1ap.so.1.0.0T /opt/nextepc/install/lib/nextepc/libs1ap.so.1.0.0
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libs1ap.so.1.0.0 libs1ap.so.1 || { rm -f libs1ap.so.1 && ln -s libs1ap.so.1.0.0 libs1ap.so.1; }; })
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libs1ap.so.1.0.0 libs1ap.so || { rm -f libs1ap.so && ln -s libs1ap.so.1.0.0 libs1ap.so; }; })
+libtool: install: /usr/bin/install -c .libs/libs1ap.lai /opt/nextepc/install/lib/nextepc/libs1ap.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/opt/nextepc/lib/s1ap'
+make[3]: Leaving directory '/opt/nextepc/lib/s1ap'
+make[2]: Leaving directory '/opt/nextepc/lib/s1ap'
+Making install in nas
+make[2]: Entering directory '/opt/nextepc/lib/nas'
+make[3]: Entering directory '/opt/nextepc/lib/nas'
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libnas.la '/opt/nextepc/install/lib/nextepc'
+libtool: install: (cd /opt/nextepc/lib/nas; /bin/bash "/opt/nextepc/libtool"  --silent --tag CC --mode=relink gcc -Wall -Werror -g -O2 -Wno-unused-result -version-info 1:0:0 -o libnas.la -rpath /opt/nextepc/install/lib/nextepc nas_decoder.lo nas_encoder.lo nas_ies.lo nas_types.lo ../../lib/core/src/libcore.la -lsctp -lgnutls -lpthread )
+libtool: install: /usr/bin/install -c .libs/libnas.so.1.0.0T /opt/nextepc/install/lib/nextepc/libnas.so.1.0.0
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libnas.so.1.0.0 libnas.so.1 || { rm -f libnas.so.1 && ln -s libnas.so.1.0.0 libnas.so.1; }; })
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libnas.so.1.0.0 libnas.so || { rm -f libnas.so && ln -s libnas.so.1.0.0 libnas.so; }; })
+libtool: install: /usr/bin/install -c .libs/libnas.lai /opt/nextepc/install/lib/nextepc/libnas.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/nextepc/lib/nas'
+make[2]: Leaving directory '/opt/nextepc/lib/nas'
+Making install in fd
+make[2]: Entering directory '/opt/nextepc/lib/fd'
+make[3]: Entering directory '/opt/nextepc/lib/fd'
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libfd.la '/opt/nextepc/install/lib/nextepc'
+libtool: install: (cd /opt/nextepc/lib/fd; /bin/bash "/opt/nextepc/libtool"  --silent --tag CC --mode=relink gcc -Wall -Werror -g -O2 -Wno-unused-result -version-info 1:0:0 -o libfd.la -rpath /opt/nextepc/install/lib/nextepc libapp_sip.lo fd_message.lo fd_logger.lo fd_config.lo fd_init.lo s6a/dict_init.lo gx/dict_init.lo gx/gx_message.lo rx/dict_init.lo rx/rx_message.lo ../../lib/core/src/libcore.la ../../lib/freeDiameter-1.2.1/libfdcore/libfdcore.la ../../lib/freeDiameter-1.2.1/libfdproto/libfdproto.la -lsctp -lgnutls -lpthread )
+libtool: install: /usr/bin/install -c .libs/libfd.so.1.0.0T /opt/nextepc/install/lib/nextepc/libfd.so.1.0.0
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libfd.so.1.0.0 libfd.so.1 || { rm -f libfd.so.1 && ln -s libfd.so.1.0.0 libfd.so.1; }; })
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libfd.so.1.0.0 libfd.so || { rm -f libfd.so && ln -s libfd.so.1.0.0 libfd.so; }; })
+libtool: install: /usr/bin/install -c .libs/libfd.lai /opt/nextepc/install/lib/nextepc/libfd.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/nextepc/lib/fd'
+make[2]: Leaving directory '/opt/nextepc/lib/fd'
+Making install in gtp
+make[2]: Entering directory '/opt/nextepc/lib/gtp'
+make[3]: Entering directory '/opt/nextepc/lib/gtp'
+ /bin/mkdir -p '/opt/nextepc/install/lib/nextepc'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libgtp.la '/opt/nextepc/install/lib/nextepc'
+libtool: install: (cd /opt/nextepc/lib/gtp; /bin/bash "/opt/nextepc/libtool"  --silent --tag CC --mode=relink gcc -Wall -Werror -g -O2 -Wno-unused-result -version-info 1:0:0 -o libgtp.la -rpath /opt/nextepc/install/lib/nextepc gtp_message.lo gtp_types.lo gtp_conv.lo gtp_node.lo gtp_path.lo gtp_xact.lo ../../lib/core/src/libcore.la -lsctp -lgnutls -lpthread )
+libtool: install: /usr/bin/install -c .libs/libgtp.so.1.0.0T /opt/nextepc/install/lib/nextepc/libgtp.so.1.0.0
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libgtp.so.1.0.0 libgtp.so.1 || { rm -f libgtp.so.1 && ln -s libgtp.so.1.0.0 libgtp.so.1; }; })
+libtool: install: (cd /opt/nextepc/install/lib/nextepc && { ln -s -f libgtp.so.1.0.0 libgtp.so || { rm -f libgtp.so && ln -s libgtp.so.1.0.0 libgtp.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgtp.lai /opt/nextepc/install/lib/nextepc/libgtp.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /opt/nextepc/install/lib/nextepc
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/nextepc/install/lib/nextepc
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/nextepc/lib/gtp'
+make[2]: Leaving directory '/opt/nextepc/lib/gtp'
+make[2]: Entering directory '/opt/nextepc/lib'
+make[3]: Entering directory '/opt/nextepc/lib'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/nextepc/lib'
+make[2]: Leaving directory '/opt/nextepc/lib'
+make[1]: Leaving directory '/opt/nextepc/lib'
+Making install in src
+make[1]: Entering directory '/opt/nextepc/src'
+Making install in common
+make[2]: Entering directory '/opt/nextepc/src/common'
+make[3]: Entering directory '/opt/nextepc/src/common'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/nextepc/src/common'
+make[2]: Leaving directory '/opt/nextepc/src/common'
+Making install in mme
+make[2]: Entering directory '/opt/nextepc/src/mme'
+make[3]: Entering directory '/opt/nextepc/src/mme'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/nextepc/src/mme'
+make[2]: Leaving directory '/opt/nextepc/src/mme'
+Making install in hss
+make[2]: Entering directory '/opt/nextepc/src/hss'
+make[3]: Entering directory '/opt/nextepc/src/hss'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/nextepc/src/hss'
+make[2]: Leaving directory '/opt/nextepc/src/hss'
+Making install in sgw
+make[2]: Entering directory '/opt/nextepc/src/sgw'
+make[3]: Entering directory '/opt/nextepc/src/sgw'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/nextepc/src/sgw'
+make[2]: Leaving directory '/opt/nextepc/src/sgw'
+Making install in pgw
+make[2]: Entering directory '/opt/nextepc/src/pgw'
+make[3]: Entering directory '/opt/nextepc/src/pgw'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/nextepc/src/pgw'
+make[2]: Leaving directory '/opt/nextepc/src/pgw'
+Making install in pcrf
+make[2]: Entering directory '/opt/nextepc/src/pcrf'
+make[3]: Entering directory '/opt/nextepc/src/pcrf'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/nextepc/src/pcrf'
+make[2]: Leaving directory '/opt/nextepc/src/pcrf'
+make[2]: Entering directory '/opt/nextepc/src'
+make[3]: Entering directory '/opt/nextepc/src'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/nextepc/src'
+make[2]: Leaving directory '/opt/nextepc/src'
+make[1]: Leaving directory '/opt/nextepc/src'
+Making install in support
+make[1]: Entering directory '/opt/nextepc/support'
+Making install in config
+make[2]: Entering directory '/opt/nextepc/support/config'
+make[3]: Entering directory '/opt/nextepc/support/config'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/opt/nextepc/install/etc/nextepc'
+ /usr/bin/install -c -m 644 nextepc.conf mme.conf sgw.conf pgw.conf hss.conf pcrf.conf '/opt/nextepc/install/etc/nextepc'
+make[3]: Leaving directory '/opt/nextepc/support/config'
+make[2]: Leaving directory '/opt/nextepc/support/config'
+Making install in freeDiameter
+make[2]: Entering directory '/opt/nextepc/support/freeDiameter'
+make[3]: Entering directory '/opt/nextepc/support/freeDiameter'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/opt/nextepc/install/etc/nextepc/freeDiameter'
+ /usr/bin/install -c -m 644 mme.conf hss.conf pgw.conf pcrf.conf cacert.pem mme.key.pem mme.cert.pem hss.key.pem hss.cert.pem pgw.key.pem pgw.cert.pem pcrf.key.pem pcrf.cert.pem '/opt/nextepc/install/etc/nextepc/freeDiameter'
+make[3]: Leaving directory '/opt/nextepc/support/freeDiameter'
+make[2]: Leaving directory '/opt/nextepc/support/freeDiameter'
+Making install in systemd
+make[2]: Entering directory '/opt/nextepc/support/systemd'
+make[3]: Entering directory '/opt/nextepc/support/systemd'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/nextepc/support/systemd'
+make[2]: Leaving directory '/opt/nextepc/support/systemd'
+Making install in logrotate
+make[2]: Entering directory '/opt/nextepc/support/logrotate'
+make[3]: Entering directory '/opt/nextepc/support/logrotate'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/nextepc/support/logrotate'
+make[2]: Leaving directory '/opt/nextepc/support/logrotate'
+Making install in newsyslog
+make[2]: Entering directory '/opt/nextepc/support/newsyslog'
+make[3]: Entering directory '/opt/nextepc/support/newsyslog'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/nextepc/support/newsyslog'
+make[2]: Leaving directory '/opt/nextepc/support/newsyslog'
+make[2]: Entering directory '/opt/nextepc/support'
+make[3]: Entering directory '/opt/nextepc/support'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/nextepc/support'
+make[2]: Leaving directory '/opt/nextepc/support'
+make[1]: Leaving directory '/opt/nextepc/support'
+Making install in test
+make[1]: Entering directory '/opt/nextepc/test'
+make[2]: Entering directory '/opt/nextepc/test'
+ /bin/mkdir -p '/opt/nextepc/install/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c testepc testvolte '/opt/nextepc/install/bin'
+libtool: install: /usr/bin/install -c .libs/testepc /opt/nextepc/install/bin/testepc
+libtool: install: /usr/bin/install -c .libs/testvolte /opt/nextepc/install/bin/testvolte
+ /bin/mkdir -p '/opt/nextepc/install/etc/nextepc/test'
+ /usr/bin/install -c -m 644 sample.conf sample-volte.conf '/opt/nextepc/install/etc/nextepc/test'
+make[2]: Leaving directory '/opt/nextepc/test'
+make[1]: Leaving directory '/opt/nextepc/test'
+make[1]: Entering directory '/opt/nextepc'
+make[2]: Entering directory '/opt/nextepc'
+ /bin/mkdir -p '/opt/nextepc/install/bin'
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c nextepc-mmed nextepc-hssd nextepc-sgwd nextepc-pgwd nextepc-pcrfd nextepc-epcd '/opt/nextepc/install/bin'
+libtool: install: /usr/bin/install -c .libs/nextepc-mmed /opt/nextepc/install/bin/nextepc-mmed
+libtool: install: /usr/bin/install -c .libs/nextepc-hssd /opt/nextepc/install/bin/nextepc-hssd
+libtool: install: /usr/bin/install -c .libs/nextepc-sgwd /opt/nextepc/install/bin/nextepc-sgwd
+libtool: install: /usr/bin/install -c .libs/nextepc-pgwd /opt/nextepc/install/bin/nextepc-pgwd
+libtool: install: /usr/bin/install -c .libs/nextepc-pcrfd /opt/nextepc/install/bin/nextepc-pcrfd
+libtool: install: /usr/bin/install -c .libs/nextepc-epcd /opt/nextepc/install/bin/nextepc-epcd
+make  install-data-hook
+make[3]: Entering directory '/opt/nextepc'
+/bin/mkdir -p //opt/nextepc/install/var/log/nextepc
+/bin/mkdir -p //opt/nextepc/install/var/run/nextepc-mmed
+/bin/mkdir -p //opt/nextepc/install/var/run/nextepc-sgwd
+/bin/mkdir -p //opt/nextepc/install/var/run/nextepc-pgwd
+/bin/mkdir -p //opt/nextepc/install/var/run/nextepc-pcrfd
+/bin/mkdir -p //opt/nextepc/install/var/run/nextepc-hssd
+/bin/mkdir -p //opt/nextepc/install/var/run/nextepc-epcd
+make[3]: Leaving directory '/opt/nextepc'
+make[2]: Leaving directory '/opt/nextepc'
+make[1]: Leaving directory '/opt/nextepc'
+
+> uglifyjs-webpack-plugin@0.4.6 postinstall /opt/nextepc/webui/node_modules/uglifyjs-webpack-plugin
+> node lib/post_install.js
+
+added 737 packages from 498 contributors and audited 807 packages in 13.211s
+found 727 vulnerabilities (276 low, 6 moderate, 445 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+[ABOUT TO WRITE THE FILE]
+
+[DONE WRITING FILE #<File:0x00005575c647ef78>]
+[ 2020-08-06 11:05:09.476 ] Process main: Done, Start Manual portion of Experiment
+[ 2020-08-06 11:05:09.476 ] Execution finished (268.514 s).
