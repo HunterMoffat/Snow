@@ -1,0 +1,17 @@
+[ 2020-08-06 11:37:28.605 ] Execution started.
+[ 2020-08-06 11:37:28.605 ] Cmdline: ["demo_2.rb"]
+[ 2020-08-06 11:37:28.608 ] Git tag: (not git repo)
+[ 2020-08-06 11:37:28.608 ] Temporary path is /tmp/d20200806-19995-e4396p
+[ 2020-08-06 11:37:28.608 ] Variable list follows:
+[ 2020-08-06 11:37:28.608 ] End of variable list.
+[ 2020-08-06 11:37:28.609 ] Process main: STARTING WORKFLOW
+[ 2020-08-06 11:37:28.609 ] Process main: PINGING
+[ 2020-08-06 11:37:31.623 ] PING 8.8.8.8 (8.8.8.8) from 192.168.0.2 oaitun_ue1: 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=113 time=55.6 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=113 time=47.7 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=113 time=49.9 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 47.789/51.120/55.632/3.309 ms
+[ 2020-08-06 11:37:31.624 ] Execution finished (3.015 s).

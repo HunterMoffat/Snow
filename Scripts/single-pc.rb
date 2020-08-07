@@ -1,11 +1,21 @@
+# A test that creates an experiment based off of the single-pc profile from POWDER
+require 'thread'
 process :main do
     username  = 'Hmoffat'
-    profile = 'Moffat_LTE'
+    profile = 'single-pc'
     project = 'reu2020'
-    exp1 = 'test'
-    gnu = powderExperiment(project, exp1, profile)
-    log("STARTING WORKFLOW")
-    log("PINGING")
-    powder_execute_one(gnu ,'sim-ran',username,"ping -c 3 -I oaitun_ue1 8.8.8.8")
+    exp1 = 'one'
+    exp2 = 'two'
+    one = powderExperiment(project, exp1, profile)
+    two = powderExperiment(project, exp2, profile)
+    experiments = Array.new(2)
+    experiments[0] = one
+    experiments[1] = two
+    log('Status of Multiple Experiments')
+    res = statusMultiple(experiments)
+    log("Status: #{res}")
+    log("Executing simple commands")
+    powder_execute_one( one, 'node', username, 'hostname && time')
+    powder_execute_one( one, 'node', username, 'hostname && time')
+    #terminateMultiple(experiments)
 end
-    
